@@ -85,6 +85,28 @@ nav .container {
     text-align: center;
 }
 
+.hero-profile {
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    image-rendering: auto;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: bicubic;
+    backface-visibility: hidden;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
