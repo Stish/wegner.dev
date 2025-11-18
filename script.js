@@ -59,6 +59,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Impressum Modal
+const impressumModal = document.getElementById('impressum-modal');
+const impressumLink = document.getElementById('impressum-link');
+const closeModal = document.querySelector('.close');
+
+impressumLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    impressumModal.style.display = 'block';
+});
+
+closeModal.addEventListener('click', () => {
+    impressumModal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === impressumModal) {
+        impressumModal.style.display = 'none';
+    }
+});
+
 // Mobile menu toggle (if you want to add a hamburger menu later)
 // This is a placeholder for future enhancement
 const createMobileMenu = () => {
