@@ -509,13 +509,26 @@ section h2 {
 }
 
 .cv-item ul {
-    list-style-position: inside;
+    list-style-position: outside;
     color: var(--text-light);
+    padding-left: 1.5rem;
 }
 
 .cv-item li {
     margin-bottom: 0.5rem;
     padding-left: 0.5rem;
+}
+
+.tools-heading {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.cv-item .skill-tags {
+    margin-bottom: 0.5rem;
 }
 
 .cv-download {
