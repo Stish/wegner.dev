@@ -1033,6 +1033,13 @@ footer {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .easter-egg-42 {
+        top: 10px;
+        left: 10px;
+        font-size: 3rem;
+        z-index: 2;
+    }
 }
 
 @media (max-width: 480px) {
