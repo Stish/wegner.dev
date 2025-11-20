@@ -413,8 +413,13 @@ if (themeToggle) {
 const easterEgg42 = document.querySelector('.easter-egg-42');
 if (easterEgg42) {
     easterEgg42.style.cursor = 'pointer';
-    easterEgg42.addEventListener('click', () => {
+    const unlock42 = () => {
         unlockAchievement('fortytwo');
+    };
+    easterEgg42.addEventListener('click', unlock42);
+    easterEgg42.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        unlock42();
     });
 }
 
