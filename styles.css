@@ -92,6 +92,7 @@ nav .container {
     color: var(--primary-color);
 }
 
+.lang-toggle,
 .theme-toggle {
     background: none;
     border: 2px solid var(--border-color);
@@ -104,11 +105,24 @@ nav .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--text-color);
 }
 
+[data-theme="dark"] .lang-toggle,
+[data-theme="dark"] .theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.lang-toggle:hover,
 .theme-toggle:hover {
     transform: rotate(20deg) scale(1.1);
     border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .lang-toggle:hover,
+[data-theme="dark"] .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
 
 /* Hero Section */

@@ -13,11 +13,12 @@
             <div class="container">
                 <h1 class="logo">Alexander Wegner</h1>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#cv">CV</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#achievements" data-i18n="nav.achievements">Achievements</a></li>
+                    <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li><button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">🇬🇧</button></li>
                     <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
                 </ul>
             </div>
@@ -33,12 +34,12 @@
                     <div class="hero-profile">
                         <img src="img/profile.jpg" alt="Alexander Wegner" class="profile-image">
                     </div>
-                    <h2>Hello, I'm <span class="highlight">Alex</span></h2>
-                    <p class="tagline">Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span></p>
-                    <p class="intro">12 years of professional experience in automotive software development with expertise in ASPICE, ADAS, test management and team leadership.</p>
+                    <h2 data-i18n="hero.greeting">Hello, I'm <span class="highlight">Alex</span></h2>
+                    <p class="tagline" data-i18n="hero.tagline">Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span></p>
+                    <p class="intro" data-i18n="hero.intro">12 years of professional experience in automotive software development with expertise in ASPICE, ADAS, test management and team leadership.</p>
                     <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero.getInTouch">Get in Touch</a>
                     </div>
                 </div>
             </div>
@@ -47,34 +48,34 @@
         <!-- About Section -->
         <section id="about">
             <div class="container">
-                <h2>About Me</h2>
+                <h2 data-i18n="about.title">About Me</h2>
                 <div class="about-content">
                     <div class="about-text justify-text">
-                        <p>I'm an experienced Software Engineer with over 12 years of professional experience, specializing in automotive series software development with a strong focus on ASPICE compliance, ADAS and Battery Management Systems. 
+                        <p data-i18n="about.para1">I'm an experienced Software Engineer with over 12 years of professional experience, specializing in automotive series software development with a strong focus on ASPICE compliance, ADAS and Battery Management Systems. 
                         My expertise spans comprehensive test management, advanced toolchain optimization, technical project leadership, and cross-functional team coordination across multiple international locations.</p>
-                        <p>With 3 years of dedicated team leadership experience managing up to 30 engineers, I've successfully established and grown a new EDAG department and site in Berlin from the ground up.</p>
-                        <p>I'm passionate about integrating AI solutions and prompt engineering techniques into engineering workflows. I drive systematic process improvements that help teams become stronger, more efficient, and more motivated.</p>
-                        <p>Currently based in the UK as an expat, I continue to push boundaries in automotive software excellence while mentoring the engineers across different countries.</p>
-                        <h3>What Drives Me</h3>
-                        <p class="motto-quote"><em>Engineer at heart - always questioning assumptions and redefining constraints. Maybe the glass isn't half full or half empty; perhaps the glass is simply too big.</em></p>
-                        <h3>My Guiding Values</h3>
+                        <p data-i18n="about.para2">With 3 years of dedicated team leadership experience managing up to 30 engineers, I've successfully established and grown a new EDAG department and site in Berlin from the ground up.</p>
+                        <p data-i18n="about.para3">I'm passionate about integrating AI solutions and prompt engineering techniques into engineering workflows. I drive systematic process improvements that help teams become stronger, more efficient, and more motivated.</p>
+                        <p data-i18n="about.para4">Currently based in the UK as an expat, I continue to push boundaries in automotive software excellence while mentoring engineers across different countries.</p>
+                        <h3 data-i18n="about.drivesMe">What Drives Me</h3>
+                        <p class="motto-quote" data-i18n="about.motto"><em>Engineer at heart - always questioning assumptions and redefining constraints. Maybe the glass isn't half full or half empty; perhaps the glass is simply too big.</em></p>
+                        <h3 data-i18n="about.values">My Guiding Values</h3>
                         <div class="guiding-values">
                             <div class="value-item">
-                                <h4>Character comes before technical skill.</h4>
-                                <p>I believe the right personality, attitude, and team mindset have a greater long-term impact than any specific technical ability.</p>
+                                <h4 data-i18n="about.value1Title">Character comes before technical skill.</h4>
+                                <p data-i18n="about.value1Text">I believe the right personality, attitude, and team mindset have a greater long-term impact than any specific technical ability.</p>
                             </div>
                             <div class="value-item">
-                                <h4>Humor and positive energy build stronger teams.</h4>
-                                <p>A light, friendly atmosphere encourages collaboration, creativity, and resilience during challenging projects.</p>
+                                <h4 data-i18n="about.value2Title">Humor and positive energy build stronger teams.</h4>
+                                <p data-i18n="about.value2Text">A light, friendly atmosphere encourages collaboration, creativity, and resilience during challenging projects.</p>
                             </div>
                             <div class="value-item">
-                                <h4>Every process can be improved.</h4>
-                                <p>I constantly look for opportunities to optimize, automate, and streamline work to increase efficiency and reduce friction.</p>
+                                <h4 data-i18n="about.value3Title">Every process can be improved.</h4>
+                                <p data-i18n="about.value3Text">I constantly look for opportunities to optimize, automate, and streamline work to increase efficiency and reduce friction.</p>
                             </div>
                         </div>
                     </div>
                     <div class="skills">
-                        <h3>Expertise <span class="ninja-hidden" title="Click me!">🥷</span></h3>
+                        <h3 data-i18n="about.expertise">Expertise <span class="ninja-hidden" title="Click me!">🥷</span></h3>
                         <div class="skill-tags">
                             <span class="tag">Software Engineer</span>
                             <span class="tag">Test Engineer</span>
@@ -88,7 +89,7 @@
                             <span class="tag">AI aided Engineering</span>
                         </div>
                         <br>
-                        <h3>Technical Skills</h3>
+                        <h3 data-i18n="about.technicalSkills">Technical Skills</h3>
                         <div class="skill-tags">
                             <span class="tag">C/C++</span>
                             <span class="tag">Python</span>
@@ -117,19 +118,19 @@
                             <span class="tag">Test Management</span>
                         </div>
                         <br>
-                        <h3>Languages</h3>
+                        <h3 data-i18n="about.languages">Languages</h3>
                         <div class="language-skills">
                             <div class="language-item">
                                 <span class="language-name">🇩🇪 German</span>
-                                <span class="language-level">Native</span>
+                                <span class="language-level" data-i18n="about.native">Native</span>
                             </div>
                             <div class="language-item">
                                 <span class="language-name">🇬🇧 English</span>
-                                <span class="language-level">Fluent</span>
+                                <span class="language-level" data-i18n="about.fluent">Fluent</span>
                             </div>
                         </div>
                         <br>
-                        <h3>Hobbies & Interests</h3>
+                        <h3 data-i18n="about.hobbies">Hobbies & Interests</h3>
                         <ul class="hobbies-list">
                             <li>🏀 Basketball - <a href="https://www.twickenhamtigers.com/home" target="_blank">Twickenham Tigers</a></li>
                             <li>🪚 Woodworking - <a href="https://www.tinyworkshop.net/" target="_blank">TinyWorkshop</a> | <a href="https://www.instructables.com/member/Stish/" target="_blank">Instructables</a></li>
@@ -144,42 +145,42 @@
         <!-- Achievements Section -->
         <section id="achievements">
             <div class="container">
-                <h2>Key Achievements</h2>
+                <h2 data-i18n="achievements.title">Key Achievements</h2>
                 <div class="achievements-grid">
                     <div class="achievement-card">
                         <div class="achievement-icon">🏢</div>
                         <h3>Built Team from Ground Up</h3>
-                        <p>Established new EDAG Berlin department and grew team from 0 to 30+ engineers across multiple international projects</p>
+                        <p data-i18n="achievements.team">Established new EDAG Berlin department and grew team from 0 to 30+ engineers across multiple international projects</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">📈</div>
                         <h3>Process Excellence</h3>
-                        <p>Led project transformation from ASPICE Level 0 to Level 2, implementing quality processes and successfully passing external assessments</p>
+                        <p data-i18n="achievements.aspice">Led project transformation from ASPICE Level 0 to Level 2, implementing quality processes and successfully passing external assessments</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">🌍</div>
                         <h3>International Leadership</h3>
-                        <p>Managing cross-cultural teams across Germany, Hungary, Czech Republic, Malaysia and India in automotive software development</p>
+                        <p data-i18n="achievements.international">Managing cross-cultural teams across Germany, Hungary, Czech Republic, Malaysia and India in automotive software development</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">🤖</div>
                         <h3>Innovation & Automation</h3>
-                        <p>AI-assisted development and toolchain optimization, reducing manual effort and minimizing potential errors through custom automation solutions</p>
+                        <p data-i18n="achievements.innovation">AI-assisted development and toolchain optimization, reducing manual effort and minimizing potential errors through custom automation solutions</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">🚀</div>
                         <h3>Rapid Technology Adoption</h3>
-                        <p>Mastered diverse tech stacks from embedded C to iOS Swift to AI-assisted development, consistently adapting to emerging technologies</p>
+                        <p data-i18n="achievements.technology">Mastered diverse tech stacks from embedded C to iOS Swift to AI-assisted development, consistently adapting to emerging technologies</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">👨‍👩‍👧</div>
                         <h3>Work-Life Balance Champion</h3>
-                        <p>Applied engineering principles to parenthood with rapid prototyping, iterative improvement, and debugging, proving that professional excellence and family dedication aren't mutually exclusive</p>
+                        <p data-i18n="achievements.balance">Applied engineering principles to parenthood with rapid prototyping, iterative improvement, and debugging, proving that professional excellence and family dedication aren't mutually exclusive</p>
                     </div>
                 </div>
             </div>
@@ -188,10 +189,10 @@
         <!-- CV Section -->
         <section id="cv">
             <div class="container">
-                <h2>Curriculum Vitae</h2>
+                <h2 data-i18n="cv.title">Curriculum Vitae</h2>
                 <div class="cv-content">
                     <div class="cv-section">
-                        <h3>Experience <span class="ninja-hidden" title="Click me!">🥷</span></h3>
+                        <h3 data-i18n="cv.experience">Experience <span class="ninja-hidden" title="Click me!">🥷</span></h3>
                         <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-marker"></div>
@@ -200,15 +201,15 @@
                                 <h4>Software Development Expert</h4>
                                 <p class="company">EDAG Engineering Limited, Leamington Spa, UK</p>
                             <ul>
-                                <li>Expat in the UK, working on cutting-edge automotive software projects</li>
-                                <li>Technical lead and SPOC in automotive projects with ASPICE and ADAS focus</li>
-                                <li>Leading team of 15 engineers to deliver high-quality software solutions</li>
-                                <li>Management of teams from different countries and EDAG locations</li>
-                                <li>Technical onboarding of team members</li>
-                                <li>Distributing work and alignment with the customer</li>
-                                <li>Technical support for tools and toolchain improvements</li>
-                                <li>Prompt Engineer - Integrating AI into engineering workflows to optimize productivity</li>
-                                <li>Customer acquisition for new technological fields in the UK</li>
+                                <li data-i18n="cv.job1.b1">Expat in the UK, working on cutting-edge automotive software projects</li>
+                                <li data-i18n="cv.job1.b2">Technical lead and SPOC in automotive projects with ASPICE and ADAS focus</li>
+                                <li data-i18n="cv.job1.b3">Leading team of 15 engineers to deliver high-quality software solutions</li>
+                                <li data-i18n="cv.job1.b4">Management of teams from different countries and EDAG locations</li>
+                                <li data-i18n="cv.job1.b5">Technical onboarding of team members</li>
+                                <li data-i18n="cv.job1.b6">Distributing work and alignment with the customer</li>
+                                <li data-i18n="cv.job1.b7">Technical support for tools and toolchain improvements</li>
+                                <li data-i18n="cv.job1.b8">Prompt Engineer - Integrating AI into engineering workflows to optimize productivity</li>
+                                <li data-i18n="cv.job1.b9">Customer acquisition for new technological fields in the UK</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -223,8 +224,8 @@
                                 <h4>Team Lead</h4>
                                 <p class="company">EDAG Engineering Group AG, Berlin, Germany</p>
                             <ul>
-                                <li>Grew and led a Embedded Software Development team from 0 up to 30+ employees</li>
-                                <li>Established a new department and EDAG site in Berlin</li>
+                                <li data-i18n="cv.job2.b1">Grew and led a Embedded Software Development team from 0 up to 30+ employees</li>
+                                <li data-i18n="cv.job2.b2">Established a new department and EDAG site in Berlin</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -239,16 +240,16 @@
                                 <h4>Test Manager & Software Engineer</h4>
                                 <p class="company">EDAG Engineering Group AG, Berlin, Germany</p>
                             <ul>
-                                <li>Test Manager for model-based software development for software serial deployment in automotive sector with up to ASIL B</li>
-                                <li>Resonsible for 10 software test engineers</li>
-                                <li>Test management, test planning, test case design, test execution, test automation, test reporting, toolchain management</li>
-                                <li>Led test management activities elevating project from ASPICE Level 0 to Level 2</li>
-                                <li>Defined and implemented quality assurance processes aligned with ASPICE standards and OEM requirements</li>
-                                <li>Successfully presented process improvements and results in multiple external ASPICE assessments</li>
-                                <li>Model-based software testing with MATLAB TargetLink/Simulink (SIL) for energy management</li>
-                                <li>Toolchain maintenance and enhancement</li>
-                                <li>Scripting and GUIs in VBA, Python and MATLAB</li>
-                                <li>Requirement engineering</li>
+                                <li data-i18n="cv.job3.b1">Test Manager for model-based software development for software serial deployment in automotive sector with up to ASIL B</li>
+                                <li data-i18n="cv.job3.b2">Resonsible for 10 software test engineers</li>
+                                <li data-i18n="cv.job3.b3">Test management, test planning, test case design, test execution, test automation, test reporting, toolchain management</li>
+                                <li data-i18n="cv.job3.b4">Led test management activities elevating project from ASPICE Level 0 to Level 2</li>
+                                <li data-i18n="cv.job3.b5">Defined and implemented quality assurance processes aligned with ASPICE standards and OEM requirements</li>
+                                <li data-i18n="cv.job3.b6">Successfully presented process improvements and results in multiple external ASPICE assessments</li>
+                                <li data-i18n="cv.job3.b7">Model-based software testing with MATLAB TargetLink/Simulink (SIL) for energy management</li>
+                                <li data-i18n="cv.job3.b8">Toolchain maintenance and enhancement</li>
+                                <li data-i18n="cv.job3.b9">Scripting and GUIs in VBA, Python and MATLAB</li>
+                                <li data-i18n="cv.job3.b10">Requirement engineering</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -263,10 +264,10 @@
                                 <h4>Co-Lead Developer & Junior Human Engineer</h4>
                                 <p class="company">Family Inc., Oppole, Poland</p>
                             <ul>
-                                <li>Parental leave</li>
-                                <li>Spearheaded a high-stakes, 24/7 project involving rapid prototyping, sleep deprivation, and real-time problem solving</li>
-                                <li>Successfully deployed version 1.0 of a small human, ensuring stability, continuous improvement, and regular feature updates</li>
-                                <li>Improved multitasking, patience, and negotiation skills under extreme conditions</li>
+                                <li data-i18n="cv.job4.b1">Parental leave</li>
+                                <li data-i18n="cv.job4.b2">Spearheaded a high-stakes, 24/7 project involving rapid prototyping, sleep deprivation, and real-time problem solving</li>
+                                <li data-i18n="cv.job4.b3">Successfully deployed version 1.0 of a small human, ensuring stability, continuous improvement, and regular feature updates</li>
+                                <li data-i18n="cv.job4.b4">Improved multitasking, patience, and negotiation skills under extreme conditions</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -281,7 +282,7 @@
                                 <h4>Software Engineer iOS</h4>
                                 <p class="company">Tiny Labs, Oppole, Poland</p>
                             <ul>
-                                <li>Freelance developing of iOS applications</li>
+                                <li data-i18n="cv.job5.b1">Freelance developing of iOS applications</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -296,13 +297,13 @@
                                 <h4>Software Engineer</h4>
                                 <p class="company">BFFT/EDAG Engineering GmbH, Gaimersheim, Germany</p>
                             <ul>
-                                <li>Validation of model-based software with MATLAB TargetLink/Simulink (MIL/SIL/PIL) in the field of energy management for Audi/VW</li>
-                                <li>Maintenance and enhancement of toolchain using M-Script, Python and VBA</li>
-                                <li>Custom Windows Tools written in Delphi</li>
-                                <li>Custom C Code for replacing Simulink blocks</li>
-                                <li>Hardware integration on testing boards and maintenance of testing boards</li>
-                                <li>Automation using CI with Jenkins</li>
-                                <li>Requirement management with Doors and software versioning with MKS/PTC</li>
+                                <li data-i18n="cv.job6.b1">Validation of model-based software with MATLAB TargetLink/Simulink (MIL/SIL/PIL) in the field of energy management for Audi/VW</li>
+                                <li data-i18n="cv.job6.b2">Maintenance and enhancement of toolchain using M-Script, Python and VBA</li>
+                                <li data-i18n="cv.job6.b3">Custom Windows Tools written in Delphi</li>
+                                <li data-i18n="cv.job6.b4">Custom C Code for replacing Simulink blocks</li>
+                                <li data-i18n="cv.job6.b5">Hardware integration on testing boards and maintenance of testing boards</li>
+                                <li data-i18n="cv.job6.b6">Automation using CI with Jenkins</li>
+                                <li data-i18n="cv.job6.b7">Requirement management with Doors and software versioning with MKS/PTC</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -317,17 +318,17 @@
                                 <h4>Software Engineer - Working Student</h4>
                                 <p class="company">Siemens AG - STA, Berlin, Germany</p>
                             <ul>
-                                <li>Design, development, and implementation of a battery management system (BMS) for electric vehicles with smart grid integration</li>
-                                <li>Development of state-of-charge (SOC) monitoring and estimation algorithms</li>
-                                <li>Development of battery cell balancing strategies to optimize battery life and performance</li>
-                                <li>Creation of SOC tracking and data logging functionality</li>
-                                <li>Integration of CAN bus communication protocols for vehicle network integration</li>
-                                <li>Development of dashboard visualization for real-time battery status monitoring</li>
-                                <li>Printed circuit board (PCB) design and prototyping for BMS hardware</li>
+                                <li data-i18n="cv.job7.b1">Design, development, and implementation of a battery management system (BMS) for electric vehicles with smart grid integration</li>
+                                <li data-i18n="cv.job7.b2">Development of state-of-charge (SOC) monitoring and estimation algorithms</li>
+                                <li data-i18n="cv.job7.b3">Development of battery cell balancing strategies to optimize battery life and performance</li>
+                                <li data-i18n="cv.job7.b4">Creation of SOC tracking and data logging functionality</li>
+                                <li data-i18n="cv.job7.b5">Integration of CAN bus communication protocols for vehicle network integration</li>
+                                <li data-i18n="cv.job7.b6">Development of dashboard visualization for real-time battery status monitoring</li>
+                                <li data-i18n="cv.job7.b7">Printed circuit board (PCB) design and prototyping for BMS hardware</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
-                                <span class="tag">C</span> <span class="tag">CAN bus</span> <span class="tag">Eagle PCB</span> <span class="tag">LaTeX</span> <span class="tag">LabVIEW</span> <span class="tag">µC: Atmel family</span> <span class="tag">8085/86</span> <span class="tag">Infineon XC2267</span>
+                                <span class="tag">C</span> <span class="tag">CAN bus</span> <span class="tag">Eagle PCB</span> <span class="tag">LaTeX</span> <span class="tag">LabVIEW</span> <span class="tag">µC: Atmel family</span> <span class="tag">µC: 8085/86</span> <span class="tag">Infineon XC2267</span>
                             </div>
                             </div>
                         </div>
@@ -338,10 +339,10 @@
                                 <h4>Internship</h4>
                                 <p class="company">Siemens AG - Dynamo Werk, Berlin, Germany</p>
                             <ul>
-                                <li>Led process optimization initiatives for the incoming goods division, implementing lean manufacturing principles</li>
-                                <li>Applied 5S methodology, Kanban systems, Just-In-Time (JIT) delivery, and Poka-Yoke error-proofing techniques</li>
-                                <li>Conducted value stream mapping to identify and eliminate waste in material flow processes</li>
-                                <li>Implemented lean administration practices to improve operational efficiency</li>
+                                <li data-i18n="cv.job8.b1">Led process optimization initiatives for the incoming goods division, implementing lean manufacturing principles</li>
+                                <li data-i18n="cv.job8.b2">Applied 5S methodology, Kanban systems, Just-In-Time (JIT) delivery, and Poka-Yoke error-proofing techniques</li>
+                                <li data-i18n="cv.job8.b3">Conducted value stream mapping to identify and eliminate waste in material flow processes</li>
+                                <li data-i18n="cv.job8.b4">Implemented lean administration practices to improve operational efficiency</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -356,11 +357,11 @@
                                 <h4>Internship</h4>
                                 <p class="company">Siemens AG - STA, Berlin, Germany</p>
                             <ul>
-                                <li>Development of a robot-kit for educational purpose in foreign countries to teach basics of mechatronics and programming</li>
-                                <li>Programming of microcontrollers in C and assembly language</li>
-                                <li>Hardware and electrical design of the robot-kit</li>
-                                <li>Programming of a desktop application for easier programming of the robot (point and click programming like Scratch or Lego SPIKE)</li>
-                                <li>Development of teaching materials and workshops</li>
+                                <li data-i18n="cv.job9.b1">Development of a robot-kit for educational purpose in foreign countries to teach basics of mechatronics and programming</li>
+                                <li data-i18n="cv.job9.b2">Programming of microcontrollers in C and assembly language</li>
+                                <li data-i18n="cv.job9.b3">Hardware and electrical design of the robot-kit</li>
+                                <li data-i18n="cv.job9.b4">Programming of a desktop application for easier programming of the robot (point and click programming like Scratch or Lego SPIKE)</li>
+                                <li data-i18n="cv.job9.b5">Development of teaching materials and workshops</li>
                             </ul>
                             <h5 class="tools-heading">Tools and Frameworks</h5>
                             <div class="skill-tags">
@@ -372,23 +373,23 @@
                     </div>
 
                     <div class="cv-section">
-                        <h3>Education</h3>
+                        <h3 data-i18n="cv.education">Education</h3>
                         <div class="cv-item">
                             <h4>B.Eng. - Electronic Systems</h4>
                             <p class="company">Berliner Hochschule für Technik, Berlin | Oct 2010 - Oct 2012</p>
-                            <p><strong>Thesis:</strong> Implementation of a battery management system in a low-power electric vehicle and development/realization of an energy management system</p>
-                            <p>Grade: 1.53 (German grading system) | Studies conducted in English</p>
+                            <p data-i18n="cv.edu1.thesis"><strong>Thesis:</strong> Implementation of a battery management system in a low-power electric vehicle and development/realization of an energy management system</p>
+                            <p data-i18n="cv.edu1.grade">Grade: 1.53 (German grading system) | Studies conducted in English</p>
                         </div>
                         <div class="cv-item">
                             <h4>Associate Engineer of Mechatronic Systems</h4>
                             <p class="company">Siemens AG, Berlin | Oct 2008 - Sep 2010</p>
-                            <p>Apprenticeship covering Mechanics, Electrical Engineering, Software Development for Embedded Systems, Business Administration, Process and Team Management</p>
-                            <p>Grade: 1.16 (German grading system) | Conducted in English</p>
+                            <p data-i18n="cv.edu2.desc">Apprenticeship covering Mechanics, Electrical Engineering, Software Development for Embedded Systems, Business Administration, Process and Team Management</p>
+                            <p data-i18n="cv.edu2.grade">Grade: 1.16 (German grading system) | Conducted in English</p>
                         </div>
                     </div>
 
                     <div class="cv-download">
-                        <a href="CV_Alexander_Wegner.pdf" class="btn btn-primary" download>Download Full CV (PDF)</a>
+                        <a href="CV_Alexander_Wegner.pdf" class="btn btn-primary" download data-i18n="cv.download">Download Full CV (PDF)</a>
                     </div>
                 </div>
             </div>
@@ -397,11 +398,11 @@
         <!-- Projects Section -->
         <section id="projects">
             <div class="container">
-                <h2>Projects <span class="ninja-hidden" title="Click me!">🥷</span></h2>
+                <h2 data-i18n="projects.title">Projects <span class="ninja-hidden" title="Click me!">🥷</span></h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <h3>🎓 Bachelor's Thesis - Battery Management System</h3>
-                        <p>Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. 
+                        <p data-i18n="projects.thesis">Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. 
                         Features include SOC monitoring, cell balancing, smart grid integration, and CAN bus communication with custom PCB design.</p>
                         <div class="project-tags">
                             <span class="tag">C</span>
@@ -415,7 +416,7 @@
 
                     <div class="project-card">
                         <h3>🔨 TinyWorkshop - Woodworking Projects</h3>
-                        <p>A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, 
+                        <p data-i18n="projects.workshop">A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, 
                         every project represents learning by doing. Explore my creations, techniques, and the evolution of my craft over the years.</p>
                         <div class="project-tags">
                             <span class="tag">Woodworking</span>
@@ -427,7 +428,7 @@
 
                     <div class="project-card">
                         <h3>🎲 TurnKeeper</h3>
-                        <p>My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative 
+                        <p data-i18n="projects.turnkeeper">My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative 
                         in tabletop RPG games like D&D, Pathfinder, and similar systems. Features intuitive turn management and works offline.</p>
                         <div class="project-tags">
                             <span class="tag">PWA</span>
@@ -441,7 +442,7 @@
 
                     <div class="project-card">
                         <h3>🤖 TurboRobo Education Kit</h3>
-                        <p>Win32 GUI application for writing C programs for the Turbo Robo Education Kit. Features an intuitive drag-and-drop programming interface 
+                        <p data-i18n="projects.turborobo">Win32 GUI application for writing C programs for the Turbo Robo Education Kit. Features an intuitive drag-and-drop programming interface 
                         similar to Scratch or Lego SPIKE, making embedded programming accessible for educational purposes.</p>
                         <div class="project-tags">
                             <span class="tag">Delphi</span>
@@ -456,7 +457,7 @@
 
                     <div class="project-card">
                         <h3>💬 Microsoft Teams Chat Export</h3>
-                        <p>A powerful Python utility that exports Microsoft Teams chats, group conversations, meetings, and channel messages into a single, 
+                        <p data-i18n="projects.teams">A powerful Python utility that exports Microsoft Teams chats, group conversations, meetings, and channel messages into a single, 
                         searchable HTML file. Features embedded images, intuitive navigation, and complete conversation history preservation.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
@@ -468,7 +469,7 @@
 
                     <div class="project-card">
                         <h3>📧 Outlook Email Scraper</h3>
-                        <p>Python script that exports emails from Microsoft Outlook folders to HTML or MSG format files. 
+                        <p data-i18n="projects.outlook">Python script that exports emails from Microsoft Outlook folders to HTML or MSG format files. 
                         Uses COM automation to connect to your local Outlook installation and saves emails with organized, timestamped filenames for easy archival.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
@@ -480,7 +481,7 @@
 
                     <div class="project-card">
                         <h3>📋 MultiClipboard Manager</h3>
-                        <p>Windows desktop application for managing multiple clipboard snippets simultaneously. 
+                        <p data-i18n="projects.clipboard">Windows desktop application for managing multiple clipboard snippets simultaneously. 
                         Enhances productivity by allowing quick access to previously copied text and managing a history of clipboard entries.</p>
                         <div class="project-tags">
                             <span class="tag">Delphi</span>
@@ -492,7 +493,7 @@
 
                     <div class="project-card">
                         <h3>🎮 iOS Games - Asteroid Blast & Sequently</h3>
-                        <p>Two iOS game projects developed during my freelance period. <strong>Asteroid Blast</strong> is a classic space shooter with modern mechanics, 
+                        <p data-i18n="projects.games">Two iOS game projects developed during my freelance period. <strong>Asteroid Blast</strong> is a classic space shooter with modern mechanics, 
                         while <strong>Sequently</strong> is an innovative music-based puzzle game. Both showcase mobile game development skills with Swift and iOS frameworks.</p>
                         <div class="project-tags">
                             <span class="tag">Swift</span>
@@ -508,7 +509,7 @@
 
                     <div class="project-card">
                         <h3>🚀 More Projects & Code Samples</h3>
-                        <p>Explore my complete collection of open-source projects and utilities. Includes MATLAB/Simulink tools for automotive development, 
+                        <p data-i18n="projects.more">Explore my complete collection of open-source projects and utilities. Includes MATLAB/Simulink tools for automotive development, 
                         Python automation scripts, VBA macros, batch utilities, and various experimental projects across multiple languages and frameworks.</p>
                         <div class="project-tags">
                             <span class="tag">MATLAB</span>
@@ -524,9 +525,9 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <h2>Get in Touch <span class="ninja-hidden" title="Click me!">🥷</span></h2>
+                <h2 data-i18n="contact.title">Get in Touch <span class="ninja-hidden" title="Click me!">🥷</span></h2>
                 <div class="contact-content">
-                    <p>I'm always interested in hearing about new opportunities and collaborations.</p>
+                    <p data-i18n="contact.intro">I'm always interested in hearing about new opportunities and collaborations.</p>
                     <div class="contact-links">
                         <a href="mailto:alexander.wegner@outlook.com" class="contact-item">
                             <span class="icon">📧</span>
