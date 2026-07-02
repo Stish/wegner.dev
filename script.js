@@ -1,12 +1,300 @@
-// Dark Mode Toggle - Initialize immediately to prevent flash
+// Language Translations
+const translations = {
+    en: {
+        'nav.about': 'About',
+        'nav.achievements': 'Achievements',
+        'nav.cv': 'CV',
+        'nav.projects': 'Projects',
+        'nav.contact': 'Contact',
+        'hero.greeting': "Hello, I'm <span class=\"highlight\">Alex</span>",
+        'hero.tagline': 'Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
+        'hero.intro': '12 years of professional experience in automotive software development with expertise in ASPICE, ADAS, test management and team leadership.',
+        'hero.viewProjects': 'View Projects',
+        'hero.getInTouch': 'Get in Touch',
+        'about.title': 'About Me',
+        'about.para1': "I'm an experienced Software Engineer with over 12 years of professional experience, specializing in automotive series software development with a strong focus on ASPICE compliance, ADAS and Battery Management Systems. My expertise spans comprehensive test management, advanced toolchain optimization, technical project leadership, and cross-functional team coordination across multiple international locations.",
+        'about.para2': "With 3 years of dedicated team leadership experience managing up to 30 engineers, I've successfully established and grown a new EDAG department and site in Berlin from the ground up.",
+        'about.para3': "I'm passionate about integrating AI solutions and prompt engineering techniques into engineering workflows. I drive systematic process improvements that help teams become stronger, more efficient, and more motivated.",
+        'about.para4': "Currently based in the UK as an expat, I continue to push boundaries in automotive software excellence while mentoring engineers across different countries.",
+        'about.drivesMe': 'What Drives Me',
+        'about.motto': '<em>Engineer at heart - always questioning assumptions and redefining constraints. Maybe the glass isn\'t half full or half empty; perhaps the glass is simply too big.</em>',
+        'about.values': 'My Guiding Values',
+        'about.value1Title': 'Character comes before technical skill.',
+        'about.value1Text': 'I believe the right personality, attitude, and team mindset have a greater long-term impact than any specific technical ability.',
+        'about.value2Title': 'Humor and positive energy build stronger teams.',
+        'about.value2Text': 'A light, friendly atmosphere encourages collaboration, creativity, and resilience during challenging projects.',
+        'about.value3Title': 'Every process can be improved.',
+        'about.value3Text': 'I constantly look for opportunities to optimize, automate, and streamline work to increase efficiency and reduce friction.',
+        'about.expertise': 'Expertise',
+        'about.technicalSkills': 'Technical Skills',
+        'about.languages': 'Languages',
+        'about.native': 'Native',
+        'about.fluent': 'Fluent',
+        'about.hobbies': 'Hobbies & Interests',
+        'achievements.title': 'Key Achievements',
+        'achievements.team': 'Established new EDAG Berlin department and grew team from 0 to 30+ engineers across multiple international projects',
+        'achievements.aspice': 'Led project transformation from ASPICE Level 0 to Level 2, implementing quality processes and successfully passing external assessments',
+        'achievements.international': 'Managing cross-cultural teams across Germany, Hungary, Czech Republic, Malaysia and India in automotive software development',
+        'achievements.innovation': 'AI-assisted development and toolchain optimization, reducing manual effort and minimizing potential errors through custom automation solutions',
+        'achievements.technology': 'Mastered diverse tech stacks from embedded C to iOS Swift to AI-assisted development, consistently adapting to emerging technologies',
+        'achievements.balance': "Applied engineering principles to parenthood with rapid prototyping, iterative improvement, and debugging, proving that professional excellence and family dedication aren't mutually exclusive",
+        'cv.title': 'Curriculum Vitae',
+        'cv.experience': 'Experience',
+        'cv.education': 'Education',
+        'cv.download': 'Download Full CV (PDF)',
+        // Job 1: Software Development Expert
+        'cv.job1.b1': 'Expat in the UK, working on cutting-edge automotive software projects',
+        'cv.job1.b2': 'Customer acquisition for new technological fields in the UK',
+        'cv.job1.b3': 'Medtech project (01.2026 - Present):',
+        'cv.job1.b3a': 'Topic Owner and Software Architect for a med-tech company',
+        'cv.job1.b3b': 'Implementation of features and functions for a new dialysis machine',
+        'cv.job1.b3c': 'Development of software tools to improve work efficiency',
+        'cv.job1.b3d': 'Tools: Azure, MatLab/Simulink, Polarion, Enterprise Architect',
+        'cv.job1.b4': 'Automotive project (05.2024 - 12.2025):',
+        'cv.job1.b4a': 'Technical lead and SPOC in automotive projects with ASPICE and ADAS focus',
+        'cv.job1.b4b': 'Leading team of 15 engineers to deliver high-quality software solutions',
+        'cv.job1.b4c': 'Management of teams from different countries and EDAG locations',
+        'cv.job1.b4d': 'Technical onboarding of team members',
+        'cv.job1.b4e': 'Distributing work and alignment with the customer',
+        'cv.job1.b4f': 'Technical support for tools and toolchain improvements',
+        'cv.job1.b4g': 'Prompt Engineer - Integrating AI into engineering workflows to optimize productivity',
+        // Job 2: Team Lead
+        'cv.job2.b1': 'Grew and led a Embedded Software Development team from 0 up to 30+ employees',
+        'cv.job2.b2': 'Established a new department and EDAG site in Berlin',
+        // Job 3: Test Manager
+        'cv.job3.b1': 'Test Manager for model-based software development for software serial deployment in automotive sector with up to ASIL B',
+        'cv.job3.b2': 'Responsible for 10 software test engineers',
+        'cv.job3.b3': 'Test management, test planning, test case design, test execution, test automation, test reporting, toolchain management',
+        'cv.job3.b4': 'Led test management activities elevating project from ASPICE Level 0 to Level 2',
+        'cv.job3.b5': 'Defined and implemented quality assurance processes aligned with ASPICE standards and OEM requirements',
+        'cv.job3.b6': 'Successfully presented process improvements and results in multiple external ASPICE assessments',
+        'cv.job3.b7': 'Model-based software testing with MATLAB TargetLink/Simulink (SIL) for energy management',
+        'cv.job3.b8': 'Toolchain maintenance and enhancement',
+        'cv.job3.b9': 'Scripting and GUIs in VBA, Python and MATLAB',
+        'cv.job3.b10': 'Requirement engineering',
+        // Job 4: Parental Leave
+        'cv.job4.b1': 'Parental leave',
+        'cv.job4.b2': 'Spearheaded a high-stakes, 24/7 project involving rapid prototyping, sleep deprivation, and real-time problem solving',
+        'cv.job4.b3': 'Successfully deployed version 1.0 of a small human, ensuring stability, continuous improvement, and regular feature updates',
+        'cv.job4.b4': 'Improved multitasking, patience, and negotiation skills under extreme conditions',
+        // Job 5: iOS Engineer
+        'cv.job5.b1': 'Freelance development of iOS applications',
+        // Job 6: BFFT/EDAG
+        'cv.job6.b1': 'Validation of model-based software with MATLAB TargetLink/Simulink (MIL/SIL/PIL) in the field of energy management for Audi/VW',
+        'cv.job6.b2': 'Maintenance and enhancement of toolchain using M-Script, Python and VBA',
+        'cv.job6.b3': 'Custom Windows Tools written in Delphi',
+        'cv.job6.b4': 'Custom C Code for replacing Simulink blocks',
+        'cv.job6.b5': 'Hardware integration on testing boards and maintenance of testing boards',
+        'cv.job6.b6': 'Automation using CI with Jenkins',
+        'cv.job6.b7': 'Requirement management with Doors and software versioning with MKS/PTC',
+        // Job 7: Siemens BMS
+        'cv.job7.b1': 'Design, development, and implementation of a battery management system (BMS) for electric vehicles with smart grid integration',
+        'cv.job7.b2': 'Development of state-of-charge (SOC) monitoring and estimation algorithms',
+        'cv.job7.b3': 'Development of battery cell balancing strategies to optimize battery life and performance',
+        'cv.job7.b4': 'Creation of SOC tracking and data logging functionality',
+        'cv.job7.b5': 'Integration of CAN bus communication protocols for vehicle network integration',
+        'cv.job7.b6': 'Development of dashboard visualization for real-time battery status monitoring',
+        'cv.job7.b7': 'Printed circuit board (PCB) design and prototyping for BMS hardware',
+        // Job 8: Siemens Dynamo Werk
+        'cv.job8.b1': 'Led process optimization initiatives for the incoming goods division, implementing lean manufacturing principles',
+        'cv.job8.b2': 'Applied 5S methodology, Kanban systems, Just-In-Time (JIT) delivery, and Poka-Yoke error-proofing techniques',
+        'cv.job8.b3': 'Conducted value stream mapping to identify and eliminate waste in material flow processes',
+        'cv.job8.b4': 'Implemented lean administration practices to improve operational efficiency',
+        // Job 9: Siemens Robot Kit
+        'cv.job9.b1': 'Development of a robot-kit for educational purpose in foreign countries to teach basics of mechatronics and programming',
+        'cv.job9.b2': 'Programming of microcontrollers in C and assembly language',
+        'cv.job9.b3': 'Hardware and electrical design of the robot-kit',
+        'cv.job9.b4': 'Programming of a desktop application for easier programming of the robot (point and click programming like Scratch or Lego SPIKE)',
+        'cv.job9.b5': 'Development of teaching materials and workshops',
+        // Education
+        'cv.edu1.thesis': '<strong>Thesis:</strong> Implementation of a battery management system in a low-power electric vehicle and development/realization of an energy management system',
+        'cv.edu1.grade': 'Grade: 1.53 (German grading system) | Studies conducted in English',
+        'cv.edu2.desc': 'Apprenticeship covering Mechanics, Electrical Engineering, Software Development for Embedded Systems, Business Administration, Process and Team Management',
+        'cv.edu2.grade': 'Grade: 1.16 (German grading system) | Conducted in English',
+        'projects.title': 'Projects',
+        'projects.thesis': 'Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. Features include SOC monitoring, cell balancing, smart grid integration, and CAN bus communication with custom PCB design.',
+        'projects.workshop': 'A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, every project represents learning by doing. Explore my creations, techniques, and the evolution of my craft over the years.',
+        'projects.turnkeeper': 'My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative in tabletop RPG games like D&D, Pathfinder, and similar systems. Features intuitive turn management and works offline.',
+        'projects.turborobo': 'Win32 GUI application for writing C programs for the Turbo Robo Education Kit. Features an intuitive drag-and-drop programming interface similar to Scratch or Lego SPIKE, making embedded programming accessible for educational purposes.',
+        'projects.teams': 'A powerful Python utility that exports Microsoft Teams chats, group conversations, meetings, and channel messages into a single, searchable HTML file. Features embedded images, intuitive navigation, and complete conversation history preservation.',
+        'projects.outlook': 'Python script that exports emails from Microsoft Outlook folders to HTML or MSG format files. Uses COM automation to connect to your local Outlook installation and saves emails with organized, timestamped filenames for easy archival.',
+        'projects.clipboard': 'Windows desktop application for managing multiple clipboard snippets simultaneously. Enhances productivity by allowing quick access to previously copied text and managing a history of clipboard entries.',
+        'projects.games': 'Two iOS game projects developed during my freelance period. <strong>Asteroid Blast</strong> is a classic space shooter with modern mechanics, while <strong>Sequently</strong> is an innovative music-based puzzle game. Both showcase mobile game development skills with Swift and iOS frameworks.',
+        'projects.autosarDesigner': 'A web-based tooling concept for AUTOSAR interface modeling and structured definition workflows. Focused on improving consistency, reducing manual setup effort, and making interface authoring more transparent for engineering teams.',
+        'projects.interfaceDiagram': 'A diagram-focused utility for visualizing and documenting interfaces in a compact and understandable way. Helps teams communicate architecture decisions faster by turning complex interface relations into clear visual artifacts.',
+        'projects.snippetBoard': 'A lightweight Chrome Extension for collecting, organizing, and reusing frequently needed code blocks and text snippets. Designed for fast, in-browser access and improved daily productivity.',
+        'projects.more': 'Explore my complete collection of open-source projects and utilities. Includes MATLAB/Simulink tools for automotive development, Python automation scripts, VBA macros, batch utilities, and various experimental projects across multiple languages and frameworks.',
+        'contact.title': 'Get in Touch',
+        'contact.intro': "I'm always interested in hearing about new opportunities and collaborations."
+    },
+    de: {
+        'nav.about': 'Über mich',
+        'nav.achievements': 'Erfolge',
+        'nav.cv': 'Lebenslauf',
+        'nav.projects': 'Projekte',
+        'nav.contact': 'Kontakt',
+        'hero.greeting': "Hallo, ich bin <span class=\"highlight\">Alex</span>",
+        'hero.tagline': 'Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
+        'hero.intro': '12 Jahre Berufserfahrung in der Automobilsoftwareentwicklung mit Expertise in ASPICE, ADAS, Testmanagement und Teamführung.',
+        'hero.viewProjects': 'Projekte ansehen',
+        'hero.getInTouch': 'Kontakt aufnehmen',
+        'about.title': 'Über mich',
+        'about.para1': 'Ich bin ein erfahrener Software Engineer mit über 12 Jahren Berufserfahrung, spezialisiert auf Automobilserien-Softwareentwicklung mit starkem Fokus auf ASPICE-Konformität, ADAS und Batteriemanagementsysteme. Meine Expertise umfasst umfassendes Testmanagement, fortschrittliche Toolchain-Optimierung, technische Projektleitung und funktionsübergreifende Teamkoordination an mehreren internationalen Standorten.',
+        'about.para2': 'Mit 3 Jahren engagierter Teamleitungserfahrung und der Leitung von bis zu 30 Ingenieuren habe ich erfolgreich eine neue EDAG-Abteilung und einen neuen Standort in Berlin von Grund auf aufgebaut.',
+        'about.para3': 'Ich bin leidenschaftlich daran interessiert, KI-Lösungen und Prompt-Engineering-Techniken in Engineering-Workflows zu integrieren. Ich treibe systematische Prozessverbesserungen voran, die Teams stärker, effizienter und motivierter machen.',
+        'about.para4': 'Derzeit in Großbritannien als Expat ansässig, erweitere ich weiterhin die Grenzen der Automobilsoftware-Exzellenz und betreue Ingenieure in verschiedenen Ländern.',
+        'about.drivesMe': 'Was mich antreibt',
+        'about.motto': '<em>Ingenieur durch und durch - Stets Annahmen hinterfragen und Beschränkungen neu definieren. Vielleicht ist das Glas weder halb voll noch halb leer; vielleicht ist das Glas einfach zu groß.</em>',
+        'about.values': 'Meine Leitsätze',
+        'about.value1Title': 'Charakter kommt vor technischem Können.',
+        'about.value1Text': 'Ich glaube, dass die richtige Persönlichkeit, Einstellung und Team-Mentalität langfristig einen größeren Einfluss haben als jede spezifische technische Fähigkeit.',
+        'about.value2Title': 'Humor und positive Energie bauen stärkere Teams auf.',
+        'about.value2Text': 'Eine lockere, freundliche Atmosphäre fördert Zusammenarbeit, Kreativität und Widerstandsfähigkeit bei herausfordernden Projekten.',
+        'about.value3Title': 'Jeder Prozess kann verbessert werden.',
+        'about.value3Text': 'Ich suche ständig nach Möglichkeiten, Arbeit zu optimieren, zu automatisieren und zu rationalisieren, um die Effizienz zu steigern und Reibungen zu reduzieren.',
+        'about.expertise': 'Expertise',
+        'about.technicalSkills': 'Technische Fähigkeiten',
+        'about.languages': 'Sprachen',
+        'about.native': 'Muttersprache',
+        'about.fluent': 'Fließend',
+        'about.hobbies': 'Hobbys & Interessen',
+        'achievements.title': 'Wichtige Erfolge',
+        'achievements.team': 'Aufbau eines neuen EDAG Standorts und Team von 0 auf 30+ Engineers, mit mehreren internationalen Projekten',
+        'achievements.aspice': 'Projekttransformation von ASPICE Level 0 auf Level 2 geleitet, Qualitätsprozesse implementiert und externe Assessments erfolgreich bestanden',
+        'achievements.international': 'Leitung interkultureller Teams in Deutschland, Ungarn, Tschechien, Malaysia und Indien in der Softwareentwicklung für die Automobilindustrie',
+        'achievements.innovation': 'KI-gestützte Entwicklung und Toolchain-Optimierung, Reduzierung manueller Arbeit und Minimierung potenzieller Fehler durch maßgeschneiderte Automatisierungslösungen',
+        'achievements.technology': 'Vielfältige Tech-Stacks von Embedded C über iOS Swift bis zur KI-gestützten Entwicklung gemeistert, konsequente Anpassung an neue Technologien',
+        'achievements.balance': 'Engineering-Prinzipien auf Elternschaft angewendet mit Rapid Prototyping, iterativer Verbesserung und Debugging. Beweisend, dass berufliche Exzellenz und Familienengagement sich nicht ausschließen',
+        'cv.title': 'Lebenslauf',
+        'cv.experience': 'Berufserfahrung',
+        'cv.education': 'Ausbildung',
+        'cv.download': 'Vollständigen Lebenslauf herunterladen (PDF)',
+        // Job 1: Software Development Expert
+        'cv.job1.b1': 'Expat in Großbritannien, tätig in zukunftsweisenden Softwareprojekten im Automobilbereich',
+        'cv.job1.b2': 'Kundenakquise für neue Technologiefelder in Großbritannien',
+        'cv.job1.b3': 'Medizintechnik-Projekt (01.2026 - heute):',
+        'cv.job1.b3a': 'Topic Owner und Software-Architekt für ein Medizintechnik-Unternehmen',
+        'cv.job1.b3b': 'Implementierung von Features und Funktionen für eine neue Dialysemaschine',
+        'cv.job1.b3c': 'Entwicklung von Software-Tools zur Steigerung der Arbeitseffizienz',
+        'cv.job1.b3d': 'Tools: Azure, MATLAB/Simulink, Polarion, Enterprise Architect',
+        'cv.job1.b4': 'Automotive-Projekt (05.2024 - 12.2025):',
+        'cv.job1.b4a': 'Technical Lead und SPOC in Automotive-Projekten mit ASPICE- und ADAS-Fokus',
+        'cv.job1.b4b': 'Leitung eines Teams von 15 Ingenieuren zur Bereitstellung hochwertiger Softwarelösungen',
+        'cv.job1.b4c': 'Führung von Teams aus verschiedenen Ländern und EDAG-Standorten',
+        'cv.job1.b4d': 'Fachliches Onboarding von Teammitgliedern',
+        'cv.job1.b4e': 'Arbeitspaketverteilung und Abstimmung mit dem Kunden',
+        'cv.job1.b4f': 'Technischer Support für Tools und Verbesserungen der Toolchain',
+        'cv.job1.b4g': 'Prompt Engineer - Integration von KI in Engineering-Workflows zur Produktivitätsoptimierung',
+        // Job 2: Team Lead
+        'cv.job2.b1': 'Aufbau und Leitung eines Embedded-Software-Entwicklungsteams von 0 auf 30+ Mitarbeiter',
+        'cv.job2.b2': 'Aufbau einer neuen Abteilung und eines EDAG-Standorts in Berlin',
+        // Job 3: Test Manager
+        'cv.job3.b1': 'Test Manager für modellbasierte Softwareentwicklung für Serienfreigabe im Automobilsektor bis ASIL B',
+        'cv.job3.b2': 'Verantwortlich für 10 Software-Testingenieure',
+        'cv.job3.b3': 'Testmanagement, Testplanung, Testfallentwurf, Testausführung, Testautomatisierung, Testreporting, Toolchain-Management',
+        'cv.job3.b4': 'Leitung der Testmanagement-Aktivitäten mit Projekttransformation von ASPICE Level 0 auf Level 2',
+        'cv.job3.b5': 'Definition und Implementierung von Qualitätssicherungsprozessen gemäß ASPICE-Standards und OEM-Anforderungen',
+        'cv.job3.b6': 'Erfolgreiche Präsentation von Prozessverbesserungen und Ergebnissen in mehreren externen ASPICE-Assessments',
+        'cv.job3.b7': 'Modellbasiertes Software-Testing mit MATLAB TargetLink/Simulink (SIL) für Energiemanagement',
+        'cv.job3.b8': 'Wartung und Erweiterung der Toolchain',
+        'cv.job3.b9': 'Skripting und GUIs in VBA, Python und MATLAB',
+        'cv.job3.b10': 'Requirements Engineering',
+        // Job 4: Parental Leave
+        'cv.job4.b1': 'Elternzeit',
+        'cv.job4.b2': 'Leitung eines hochriskanten 24/7-Projekts mit Rapid Prototyping, Schlafentzug und Problemlösung in Echtzeit',
+        'cv.job4.b3': 'Erfolgreicher Rollout von Version 1.0 eines kleinen Menschen mit Sicherstellung von Stabilität, kontinuierlicher Verbesserung und regelmäßigen Feature-Updates',
+        'cv.job4.b4': 'Verbesserung von Multitasking, Geduld und Verhandlungsgeschick unter extremen Bedingungen',
+        // Job 5: iOS Engineer
+        'cv.job5.b1': 'Freiberufliche Entwicklung von iOS-Anwendungen',
+        // Job 6: BFFT/EDAG
+        'cv.job6.b1': 'Validierung modellbasierter Software mit MATLAB TargetLink/Simulink (MIL/SIL/PIL) im Bereich Energiemanagement für Audi/VW',
+        'cv.job6.b2': 'Wartung und Erweiterung der Toolchain mit M-Script, Python und VBA',
+        'cv.job6.b3': 'Maßgeschneiderte Windows-Tools in Delphi entwickelt',
+        'cv.job6.b4': 'Maßgeschneiderter C-Code zum Ersetzen von Simulink-Blöcken',
+        'cv.job6.b5': 'Hardware-Integration auf Testboards und Wartung der Testboards',
+        'cv.job6.b6': 'Automatisierung mit CI über Jenkins',
+        'cv.job6.b7': 'Requirements-Management mit Doors und Versionsverwaltung mit MKS/PTC',
+        // Job 7: Siemens BMS
+        'cv.job7.b1': 'Design, Entwicklung und Implementierung eines Batteriemanagementsystems (BMS) für Elektrofahrzeuge mit Smart-Grid-Integration',
+        'cv.job7.b2': 'Entwicklung von Ladezustandsüberwachungs- und Schätzalgorithmen (SOC)',
+        'cv.job7.b3': 'Entwicklung von Batteriezellen-Balancing-Strategien zur Optimierung von Batterielebensdauer und Leistung',
+        'cv.job7.b4': 'Erstellung von SOC-Tracking und Datenlogging-Funktionalität',
+        'cv.job7.b5': 'Integration von CAN-Bus-Kommunikationsprotokollen für Fahrzeugnetzwerkintegration',
+        'cv.job7.b6': 'Entwicklung von Dashboard-Visualisierung für Echtzeit-Batteriestatusüberwachung',
+        'cv.job7.b7': 'Leiterplattenentwurf (PCB) und Prototyping für BMS-Hardware',
+        // Job 8: Siemens Dynamo Werk
+        'cv.job8.b1': 'Leitung von Prozessoptimierungsinitiativen für die Wareneingangsdivision mit Implementierung von Lean-Manufacturing-Prinzipien',
+        'cv.job8.b2': 'Anwendung von 5S-Methodik, Kanban-Systemen, Just-In-Time (JIT) Lieferung und Poka-Yoke Fehlerverhinderungstechniken',
+        'cv.job8.b3': 'Durchführung von Wertstromanalysen zur Identifizierung und Eliminierung von Verschwendung in Materialflussprozessen',
+        'cv.job8.b4': 'Implementierung von Lean-Administration-Praktiken zur Verbesserung der Betriebseffizienz',
+        // Job 9: Siemens Robot Kit
+        'cv.job9.b1': 'Entwicklung eines Roboterbaukastens für Bildungszwecke im Ausland zur Vermittlung von Mechatronik- und Programmiergrundlagen',
+        'cv.job9.b2': 'Programmierung von Mikrocontrollern in C und Assembler',
+        'cv.job9.b3': 'Hardware- und Elektrodesign des Roboterbaukastens',
+        'cv.job9.b4': 'Programmierung einer Desktop-Anwendung zur einfacheren Roboterprogrammierung (Point-and-Click-Programmierung wie Scratch oder Lego SPIKE)',
+        'cv.job9.b5': 'Entwicklung von Lehrmaterialien und Workshops',
+        // Education
+        'cv.edu1.thesis': '<strong>Thesis:</strong> Implementierung eines Batteriemanagement Systems in einem Elektroauto kleiner Leistung und Entwicklung/Realisierung eines Energiemanagement Systems',
+        'cv.edu1.grade': 'Note: 1,53 (deutsches Notensystem) | Studium auf Englisch',
+        'cv.edu2.desc': 'Ausbildung mit Schwerpunkten auf Mechanik, Elektrotechnik, Softwareentwicklung für Embedded Systems, Betriebswirtschaft, Prozess- und Teammanagement',
+        'cv.edu2.grade': 'Note: 1,16 (deutsches Notensystem) | Ausbildung auf Englisch',
+        'projects.title': 'Projekte',
+        'projects.thesis': 'Implementierung eines Batteriemanagementsystems in einem Niedrigenergie-Elektrofahrzeug mit umfassendem Energiemanagement. Funktionen umfassen SOC-Überwachung, Zellenbalancierung, Smart-Grid-Integration und CAN-Bus-Kommunikation mit maßgeschneidertem PCB-Design.',
+        'projects.workshop': 'Eine Reise in die Holzbearbeitung, die mit kleinen Projekten begann und zu einer vollständigen Werkstatt heranwuchs. Von einfachen Handwerkzeugen bis hin zu fortschrittlichen Maschinen repräsentiert jedes Projekt Learning by Doing. Entdecken Sie meine Kreationen, Techniken und die Entwicklung meines Handwerks über die Jahre.',
+        'projects.turnkeeper': 'Mein erstes vollständiges Projekt, komplett mit KI-unterstützter Entwicklung erstellt! Eine Mobile-First Progressive Web App (PWA) zur Verfolgung der Kampfinitiative in Pen-and-Paper-Rollenspielen wie D&D, Pathfinder und ähnlichen Systemen. Bietet intuitive Rundenverwaltung und funktioniert offline.',
+        'projects.turborobo': 'Win32-GUI-Anwendung zum Schreiben von C-Programmen für das Turbo Robo Education Kit. Bietet eine intuitive Drag-and-Drop-Programmieroberfläche ähnlich wie Scratch oder Lego SPIKE und macht Embedded-Programmierung für Bildungszwecke zugänglich.',
+        'projects.teams': 'Ein leistungsstarkes Python-Tool, das Microsoft Teams Chats, Gruppengespräche, Meetings und Kanalnachrichten in eine einzige, durchsuchbare HTML-Datei exportiert. Bietet eingebettete Bilder, intuitive Navigation und vollständige Konversationshistorie.',
+        'projects.outlook': 'Python-Skript zum Exportieren von E-Mails aus Microsoft Outlook-Ordnern in HTML- oder MSG-Dateien. Verwendet COM-Automatisierung zur Verbindung mit Ihrer lokalen Outlook-Installation und speichert E-Mails mit organisierten, zeitgestempelten Dateinamen für einfache Archivierung.',
+        'projects.clipboard': 'Windows-Desktop-Anwendung zur gleichzeitigen Verwaltung mehrerer Zwischenablage-Snippets. Erhöht die Produktivität durch schnellen Zugriff auf zuvor kopierten Text und Verwaltung einer Historie von Zwischenablage-Einträgen.',
+        'projects.games': 'Zwei iOS-Spielprojekte, die während meiner freiberuflichen Tätigkeit entwickelt wurden. <strong>Asteroid Blast</strong> ist ein klassischer Space Shooter mit modernen Mechaniken, während <strong>Sequently</strong> ein innovatives musikbasiertes Puzzlespiel ist. Beide zeigen Fähigkeiten in der mobilen Spieleentwicklung mit Swift und iOS Frameworks.',
+        'projects.autosarDesigner': 'Ein webbasiertes Tooling-Konzept für AUTOSAR-Interface-Modellierung und strukturierte Definitions-Workflows. Fokus auf besserer Konsistenz, weniger manuellem Aufwand und transparenterem Interface-Authoring für Engineering-Teams.',
+        'projects.interfaceDiagram': 'Ein diagrammorientiertes Tool zur Visualisierung und Dokumentation von Interfaces in kompakter und verständlicher Form. Unterstützt Teams dabei, Architekturentscheidungen schneller zu vermitteln, indem komplexe Beziehungen klar dargestellt werden.',
+        'projects.snippetBoard': 'Eine leichtgewichtige Chrome-Extension zum Sammeln, Organisieren und Wiederverwenden häufig benötigter Code- und Textbausteine. Entwickelt für schnellen Zugriff direkt im Browser und mehr Produktivität im Alltag.',
+        'projects.more': 'Entdecken Sie meine vollständige Sammlung von Open-Source-Projekten und Tools. Beinhaltet MATLAB/Simulink-Tools für Automobilentwicklung, Python-Automatisierungsskripte, VBA-Makros, Batch-Utilities und verschiedene experimentelle Projekte in mehreren Sprachen und Frameworks.',
+        'contact.title': 'Kontakt',
+        'contact.intro': 'Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.'
+    }
+};
+
+// Language Toggle - Initialize immediately
 const htmlElement = document.documentElement;
+const currentLang = localStorage.getItem('language') || 'en';
+htmlElement.setAttribute('lang', currentLang);
+
+function setLanguage(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+        }
+    });
+    localStorage.setItem('language', lang);
+    htmlElement.setAttribute('lang', lang);
+}
+
+// Dark Mode Toggle - Initialize immediately to prevent flash
 const currentTheme = localStorage.getItem('theme') || 'light';
 htmlElement.setAttribute('data-theme', currentTheme);
 
-// Set up dark mode toggle once DOM is ready
+// Set up toggles once DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
+    // Initialize language
+    setLanguage(currentLang);
     
+    // Language toggle
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.textContent = currentLang === 'en' ? '🇬🇧' : '🇩🇪';
+        
+        langToggle.addEventListener('click', () => {
+            const newLang = htmlElement.getAttribute('lang') === 'en' ? 'de' : 'en';
+            setLanguage(newLang);
+            langToggle.textContent = newLang === 'en' ? '🇬🇧' : '🇩🇪';
+        });
+    }
+    
+    // Theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
         themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
         
