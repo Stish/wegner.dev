@@ -284,12 +284,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Language toggle
     const langToggle = document.getElementById('lang-toggle');
     if (langToggle) {
-        langToggle.textContent = currentLang === 'en' ? '🇬🇧' : '🇩🇪';
+        langToggle.textContent = currentLang === 'en' ? 'EN' : 'DE';
         
         langToggle.addEventListener('click', () => {
             const newLang = htmlElement.getAttribute('lang') === 'en' ? 'de' : 'en';
             setLanguage(newLang);
-            langToggle.textContent = newLang === 'en' ? '🇬🇧' : '🇩🇪';
+            langToggle.textContent = newLang === 'en' ? 'EN' : 'DE';
         });
     }
     
