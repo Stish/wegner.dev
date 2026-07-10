@@ -25,7 +25,7 @@ const translations = {
         'about.value2Text': 'A light, friendly atmosphere encourages collaboration, creativity, and resilience during challenging projects.',
         'about.value3Title': 'Every process can be improved.',
         'about.value3Text': 'I constantly look for opportunities to optimize, automate, and streamline work to increase efficiency and reduce friction.',
-        'about.expertise': 'Expertise',
+        'about.expertise': 'Expertise <span class="ninja-hidden" title="Click me!">🥷</span>',
         'about.technicalSkills': 'Technical Skills',
         'about.languages': 'Languages',
         'about.native': 'Native',
@@ -39,7 +39,7 @@ const translations = {
         'achievements.technology': 'Mastered diverse tech stacks from embedded C to iOS Swift to AI-assisted development, consistently adapting to emerging technologies',
         'achievements.balance': "Applied engineering principles to parenthood with rapid prototyping, iterative improvement, and debugging, proving that professional excellence and family dedication aren't mutually exclusive",
         'cv.title': 'Curriculum Vitae',
-        'cv.experience': 'Experience',
+        'cv.experience': 'Experience <span class="ninja-hidden" title="Click me!">🥷</span>',
         'cv.education': 'Education',
         'cv.download': 'Download Full CV (PDF)',
         // Job 1: Software Development Expert
@@ -111,7 +111,7 @@ const translations = {
         'cv.edu1.grade': 'Grade: 1.53 (German grading system) | Studies conducted in English',
         'cv.edu2.desc': 'Apprenticeship covering Mechanics, Electrical Engineering, Software Development for Embedded Systems, Business Administration, Process and Team Management',
         'cv.edu2.grade': 'Grade: 1.16 (German grading system) | Conducted in English',
-        'projects.title': 'Projects',
+        'projects.title': 'Projects <span class="ninja-hidden" title="Click me!">🥷</span>',
         'projects.thesis': 'Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. Features include SOC monitoring, cell balancing, smart grid integration, and CAN bus communication with custom PCB design.',
         'projects.workshop': 'A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, every project represents learning by doing. Explore my creations, techniques, and the evolution of my craft over the years.',
         'projects.turnkeeper': 'My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative in tabletop RPG games like D&D, Pathfinder, and similar systems. Features intuitive turn management and works offline.',
@@ -124,7 +124,7 @@ const translations = {
         'projects.interfaceDiagram': 'A diagram-focused utility for visualizing and documenting interfaces in a compact and understandable way. Helps teams communicate architecture decisions faster by turning complex interface relations into clear visual artifacts.',
         'projects.snippetBoard': 'A lightweight Chrome Extension for collecting, organizing, and reusing frequently needed code blocks and text snippets. Designed for fast, in-browser access and improved daily productivity.',
         'projects.more': 'Explore my complete collection of open-source projects and utilities. Includes MATLAB/Simulink tools for automotive development, Python automation scripts, VBA macros, batch utilities, and various experimental projects across multiple languages and frameworks.',
-        'contact.title': 'Get in Touch',
+        'contact.title': 'Get in Touch <span class="ninja-hidden" title="Click me!">🥷</span>',
         'contact.intro': "I'm always interested in hearing about new opportunities and collaborations."
     },
     de: {
@@ -152,7 +152,7 @@ const translations = {
         'about.value2Text': 'Eine lockere, freundliche Atmosphäre fördert Zusammenarbeit, Kreativität und Widerstandsfähigkeit bei herausfordernden Projekten.',
         'about.value3Title': 'Jeder Prozess kann verbessert werden.',
         'about.value3Text': 'Ich suche ständig nach Möglichkeiten, Arbeit zu optimieren, zu automatisieren und zu rationalisieren, um die Effizienz zu steigern und Reibungen zu reduzieren.',
-        'about.expertise': 'Expertise',
+        'about.expertise': 'Expertise <span class="ninja-hidden" title="Click me!">🥷</span>',
         'about.technicalSkills': 'Technische Fähigkeiten',
         'about.languages': 'Sprachen',
         'about.native': 'Muttersprache',
@@ -166,7 +166,7 @@ const translations = {
         'achievements.technology': 'Vielfältige Tech-Stacks von Embedded C über iOS Swift bis zur KI-gestützten Entwicklung gemeistert, konsequente Anpassung an neue Technologien',
         'achievements.balance': 'Engineering-Prinzipien auf Elternschaft angewendet mit Rapid Prototyping, iterativer Verbesserung und Debugging. Beweisend, dass berufliche Exzellenz und Familienengagement sich nicht ausschließen',
         'cv.title': 'Lebenslauf',
-        'cv.experience': 'Berufserfahrung',
+        'cv.experience': 'Berufserfahrung <span class="ninja-hidden" title="Click me!">🥷</span>',
         'cv.education': 'Ausbildung',
         'cv.download': 'Vollständigen Lebenslauf herunterladen (PDF)',
         // Job 1: Software Development Expert
@@ -238,7 +238,7 @@ const translations = {
         'cv.edu1.grade': 'Note: 1,53 (deutsches Notensystem) | Studium auf Englisch',
         'cv.edu2.desc': 'Ausbildung mit Schwerpunkten auf Mechanik, Elektrotechnik, Softwareentwicklung für Embedded Systems, Betriebswirtschaft, Prozess- und Teammanagement',
         'cv.edu2.grade': 'Note: 1,16 (deutsches Notensystem) | Ausbildung auf Englisch',
-        'projects.title': 'Projekte',
+        'projects.title': 'Projekte <span class="ninja-hidden" title="Click me!">🥷</span>',
         'projects.thesis': 'Implementierung eines Batteriemanagementsystems in einem Niedrigenergie-Elektrofahrzeug mit umfassendem Energiemanagement. Funktionen umfassen SOC-Überwachung, Zellenbalancierung, Smart-Grid-Integration und CAN-Bus-Kommunikation mit maßgeschneidertem PCB-Design.',
         'projects.workshop': 'Eine Reise in die Holzbearbeitung, die mit kleinen Projekten begann und zu einer vollständigen Werkstatt heranwuchs. Von einfachen Handwerkzeugen bis hin zu fortschrittlichen Maschinen repräsentiert jedes Projekt Learning by Doing. Entdecken Sie meine Kreationen, Techniken und die Entwicklung meines Handwerks über die Jahre.',
         'projects.turnkeeper': 'Mein erstes vollständiges Projekt, komplett mit KI-unterstützter Entwicklung erstellt! Eine Mobile-First Progressive Web App (PWA) zur Verfolgung der Kampfinitiative in Pen-and-Paper-Rollenspielen wie D&D, Pathfinder und ähnlichen Systemen. Bietet intuitive Rundenverwaltung und funktioniert offline.',
@@ -251,7 +251,7 @@ const translations = {
         'projects.interfaceDiagram': 'Ein diagrammorientiertes Tool zur Visualisierung und Dokumentation von Interfaces in kompakter und verständlicher Form. Unterstützt Teams dabei, Architekturentscheidungen schneller zu vermitteln, indem komplexe Beziehungen klar dargestellt werden.',
         'projects.snippetBoard': 'Eine leichtgewichtige Chrome-Extension zum Sammeln, Organisieren und Wiederverwenden häufig benötigter Code- und Textbausteine. Entwickelt für schnellen Zugriff direkt im Browser und mehr Produktivität im Alltag.',
         'projects.more': 'Entdecken Sie meine vollständige Sammlung von Open-Source-Projekten und Tools. Beinhaltet MATLAB/Simulink-Tools für Automobilentwicklung, Python-Automatisierungsskripte, VBA-Makros, Batch-Utilities und verschiedene experimentelle Projekte in mehreren Sprachen und Frameworks.',
-        'contact.title': 'Kontakt',
+        'contact.title': 'Kontakt <span class="ninja-hidden" title="Click me!">🥷</span>',
         'contact.intro': 'Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.'
     }
 };
