@@ -268,6 +268,8 @@ function setLanguage(lang) {
             element.innerHTML = translations[lang][key];
         }
     });
+
+    setupNinjas();
     localStorage.setItem('language', lang);
     htmlElement.setAttribute('lang', lang);
 }
@@ -723,7 +725,14 @@ if (copyrightEgg) {
 function setupNinjas() {
     const ninjas = document.querySelectorAll('.ninja-hidden, .ninja-visible');
     ninjas.forEach((ninja, index) => {
-        ninja.addEventListener('click', (e) => {
+        if (ninja.dataset.ninjaBound === 'true') {
+            if (ninjasFound.includes(`ninja-${index}`)) {
+                ninja.style.opacity = '0.3';
+            }
+            return;
+        }
+
+        const handleNinjaFound = (e) => {
             e.stopPropagation();
             const ninjaId = `ninja-${index}`;
             
@@ -762,6 +771,13 @@ function setupNinjas() {
                 
                 updateTracker();
             }
+        };
+
+        ninja.dataset.ninjaBound = 'true';
+        ninja.addEventListener('click', handleNinjaFound);
+        ninja.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            handleNinjaFound(e);
         });
         
         // Mark already found ninjas
