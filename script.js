@@ -6,6 +6,8 @@ const translations = {
         'nav.cv': 'CV',
         'nav.projects': 'Projects',
         'nav.contact': 'Contact',
+        'nav.menuOpen': 'Open menu',
+        'nav.menuClose': 'Close menu',
         'hero.greeting': "Hello, I'm <span class=\"highlight\">Alex</span>",
         'hero.tagline': 'iOS Developer @ Tiny Twig Studio • Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
         'hero.intro': '12 years of professional experience in automotive and med-tech software development with expertise in ASPICE, ADAS, test management and team leadership — and back to building iOS apps with my own studio. <strong>Sequently</strong> is out now on the App Store.',
@@ -33,6 +35,12 @@ const translations = {
         'about.fluent': 'Fluent',
         'about.hobbies': 'Hobbies & Interests',
         'achievements.title': 'Key Achievements',
+        'achievements.teamTitle': 'Built Team from Ground Up',
+        'achievements.aspiceTitle': 'Process Excellence',
+        'achievements.internationalTitle': 'International Leadership',
+        'achievements.innovationTitle': 'Innovation &amp; Automation',
+        'achievements.technologyTitle': 'Rapid Technology Adoption',
+        'achievements.balanceTitle': 'Work-Life Balance Champion',
         'achievements.team': 'Established new EDAG Berlin department and grew team from 0 to 30+ engineers across multiple international projects',
         'achievements.aspice': 'Led project transformation from ASPICE Level 0 to Level 2, implementing quality processes and successfully passing external assessments',
         'achievements.international': 'Managing cross-cultural teams across Germany, Hungary, Czech Republic, Malaysia and India in automotive software development',
@@ -43,6 +51,13 @@ const translations = {
         'cv.experience': 'Experience <span class="ninja-hidden" title="Click me!">🥷</span>',
         'cv.education': 'Education',
         'cv.download': 'Download Full CV (PDF)',
+        // Job 0: Tiny Twig Studio
+        'cv.parallel': '⇄ Alongside my role at EDAG',
+        'cv.job0.b1': 'Founded an independent studio for small, carefully built iPhone and iPad apps – no ads, no tracking',
+        'cv.job0.b2': 'Concept, design, development and App Store release of <strong>Sequently</strong>, a music memory game (released Nov 2026)',
+        'cv.job0.b3': 'Development of <strong>Pip Relight</strong>, a turn-based puzzle game with a browser-based level editor',
+        'cv.job0.b4': 'Accessibility by design: VoiceOver support, colour-blind friendly shapes, adjustable tempo',
+        'cv.job0.b5': 'Companion web tools (composer, level editor) and studio website',
         // Job 1: Software Development Expert
         'cv.job1.b1': 'Expat in the UK, working on cutting-edge automotive software projects',
         'cv.job1.b2': 'Customer acquisition for new technological fields in the UK',
@@ -143,6 +158,8 @@ const translations = {
         'nav.cv': 'Lebenslauf',
         'nav.projects': 'Projekte',
         'nav.contact': 'Kontakt',
+        'nav.menuOpen': 'Menü öffnen',
+        'nav.menuClose': 'Menü schließen',
         'hero.greeting': "Hallo, ich bin <span class=\"highlight\">Alex</span>",
         'hero.tagline': 'iOS Developer @ Tiny Twig Studio • Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
         'hero.intro': '12 Jahre Berufserfahrung in der Software-Entwicklung für Automotive und Medizintechnik mit Expertise in ASPICE, ADAS, Testmanagement und Teamführung — und zurück bei iOS mit meinem eigenen Studio. <strong>Sequently</strong> ist jetzt im App Store erhältlich.',
@@ -170,6 +187,12 @@ const translations = {
         'about.fluent': 'Fließend',
         'about.hobbies': 'Hobbys & Interessen',
         'achievements.title': 'Wichtige Erfolge',
+        'achievements.teamTitle': 'Team von Grund auf aufgebaut',
+        'achievements.aspiceTitle': 'Prozessexzellenz',
+        'achievements.internationalTitle': 'Internationale Führung',
+        'achievements.innovationTitle': 'Innovation &amp; Automatisierung',
+        'achievements.technologyTitle': 'Schnelle Technologie-Adaption',
+        'achievements.balanceTitle': 'Work-Life-Balance-Champion',
         'achievements.team': 'Aufbau eines neuen EDAG Standorts und Team von 0 auf 30+ Engineers, mit mehreren internationalen Projekten',
         'achievements.aspice': 'Projekttransformation von ASPICE Level 0 auf Level 2 geleitet, Qualitätsprozesse implementiert und externe Assessments erfolgreich bestanden',
         'achievements.international': 'Leitung interkultureller Teams in Deutschland, Ungarn, Tschechien, Malaysia und Indien in der Softwareentwicklung für die Automobilindustrie',
@@ -180,6 +203,13 @@ const translations = {
         'cv.experience': 'Berufserfahrung <span class="ninja-hidden" title="Click me!">🥷</span>',
         'cv.education': 'Ausbildung',
         'cv.download': 'Vollständigen Lebenslauf herunterladen (PDF)',
+        // Job 0: Tiny Twig Studio
+        'cv.parallel': '⇄ Parallel zu meiner Tätigkeit bei EDAG',
+        'cv.job0.b1': 'Gründung eines unabhängigen Studios für kleine, sorgfältig gebaute iPhone- und iPad-Apps – ohne Werbung, ohne Tracking',
+        'cv.job0.b2': 'Konzept, Design, Entwicklung und App-Store-Veröffentlichung von <strong>Sequently</strong>, einem musikalischen Gedächtnisspiel (veröffentlicht Nov. 2026)',
+        'cv.job0.b3': 'Entwicklung von <strong>Pip Relight</strong>, einem rundenbasierten Puzzlespiel mit browserbasiertem Level-Editor',
+        'cv.job0.b4': 'Barrierefreiheit von Anfang an: VoiceOver-Unterstützung, Formen für Farbenblinde, einstellbares Tempo',
+        'cv.job0.b5': 'Begleitende Web-Tools (Composer, Level-Editor) und Studio-Website',
         // Job 1: Software Development Expert
         'cv.job1.b1': 'Expat in Großbritannien, tätig in zukunftsweisenden Softwareprojekten im Automobilbereich',
         'cv.job1.b2': 'Kundenakquise für neue Technologiefelder in Großbritannien',
@@ -909,8 +939,40 @@ if (resetBtn) {
 loadAchievements();
 updateAchievementsList();
 
-// Mobile menu toggle (if you want to add a hamburger menu later)
-// This is a placeholder for future enhancement
-const createMobileMenu = () => {
-    // Add mobile menu functionality here if needed
-};
+// Mobile menu (hamburger)
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+function setMenuOpen(open) {
+    if (!menuToggle || !navLinks) return;
+    const lang = htmlElement.getAttribute('lang') || 'en';
+    navLinks.classList.toggle('open', open);
+    menuToggle.classList.toggle('open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', translations[lang][open ? 'nav.menuClose' : 'nav.menuOpen']);
+}
+
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setMenuOpen(!navLinks.classList.contains('open'));
+    });
+
+    // Close after choosing a section
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => setMenuOpen(false));
+    });
+
+    // Close on outside click, Escape, or when switching to desktop width
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('open') && !navLinks.contains(e.target)) {
+            setMenuOpen(false);
+        }
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setMenuOpen(false);
+    });
+    window.matchMedia('(min-width: 769px)').addEventListener('change', (e) => {
+        if (e.matches) setMenuOpen(false);
+    });
+}

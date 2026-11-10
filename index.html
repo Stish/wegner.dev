@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alexander Wegner - Software Engineer &amp; indie iOS developer (Tiny Twig Studio) | Personal portfolio and CV">
     <title>Alexander Wegner - Portfolio</title>
+    <link rel="canonical" href="https://stish.github.io/wegner.dev/">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Alexander Wegner">
+    <meta property="og:url" content="https://stish.github.io/wegner.dev/">
+    <meta property="og:title" content="Alexander Wegner – Software Engineer &amp; iOS Developer">
+    <meta property="og:description" content="12 years of software engineering in automotive and med-tech, team lead and test manager – and founder of Tiny Twig Studio, making small, carefully built iOS apps like Sequently.">
+    <meta property="og:image" content="https://stish.github.io/wegner.dev/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Alexander Wegner – Software Engineer &amp; iOS Developer, founder of Tiny Twig Studio">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="profile:first_name" content="Alexander">
+    <meta property="profile:last_name" content="Wegner">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alexander Wegner – Software Engineer &amp; iOS Developer">
+    <meta name="twitter:description" content="Software engineering in automotive and med-tech – and founder of Tiny Twig Studio, making small, carefully built iOS apps.">
+    <meta name="twitter:image" content="https://stish.github.io/wegner.dev/img/og-image.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,15 +34,22 @@
         <nav>
             <div class="container">
                 <h1 class="logo">Alexander Wegner</h1>
-                <ul class="nav-links">
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#about" data-i18n="nav.about">About</a></li>
                     <li><a href="#achievements" data-i18n="nav.achievements">Achievements</a></li>
                     <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
                     <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
                     <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-                    <li><button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">🇬🇧</button></li>
-                    <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
                 </ul>
+                <div class="nav-actions">
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">EN</button>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -154,37 +183,37 @@
                 <div class="achievements-grid">
                     <div class="achievement-card">
                         <div class="achievement-icon">🏢</div>
-                        <h3>Built Team from Ground Up</h3>
+                        <h3 data-i18n="achievements.teamTitle">Built Team from Ground Up</h3>
                         <p data-i18n="achievements.team">Established new EDAG Berlin department and grew team from 0 to 30+ engineers across multiple international projects</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">📈</div>
-                        <h3>Process Excellence</h3>
+                        <h3 data-i18n="achievements.aspiceTitle">Process Excellence</h3>
                         <p data-i18n="achievements.aspice">Led project transformation from ASPICE Level 0 to Level 2, implementing quality processes and successfully passing external assessments</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">🌍</div>
-                        <h3>International Leadership</h3>
+                        <h3 data-i18n="achievements.internationalTitle">International Leadership</h3>
                         <p data-i18n="achievements.international">Managing cross-cultural teams across Germany, Hungary, Czech Republic, Malaysia and India in automotive software development</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">🤖</div>
-                        <h3>Innovation & Automation</h3>
+                        <h3 data-i18n="achievements.innovationTitle">Innovation &amp; Automation</h3>
                         <p data-i18n="achievements.innovation">AI-assisted development and toolchain optimization, reducing manual effort and minimizing potential errors through custom automation solutions</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">🚀</div>
-                        <h3>Rapid Technology Adoption</h3>
+                        <h3 data-i18n="achievements.technologyTitle">Rapid Technology Adoption</h3>
                         <p data-i18n="achievements.technology">Mastered diverse tech stacks from embedded C to iOS Swift to AI-assisted development, consistently adapting to emerging technologies</p>
                     </div>
                     
                     <div class="achievement-card">
                         <div class="achievement-icon">👨‍👩‍👧</div>
-                        <h3>Work-Life Balance Champion</h3>
+                        <h3 data-i18n="achievements.balanceTitle">Work-Life Balance Champion</h3>
                         <p data-i18n="achievements.balance">Applied engineering principles to parenthood with rapid prototyping, iterative improvement, and debugging, proving that professional excellence and family dedication aren't mutually exclusive</p>
                     </div>
                 </div>
@@ -199,7 +228,27 @@
                     <div class="cv-section">
                         <h3 data-i18n="cv.experience">Experience <span class="ninja-hidden" title="Click me!">🥷</span></h3>
                         <div class="timeline">
-                        <div class="timeline-item">
+                        <div class="timeline-item current">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content cv-item">
+                                <div class="timeline-date">Oct 2026 - Present</div>
+                                <span class="timeline-parallel" data-i18n="cv.parallel">⇄ Alongside my role at EDAG</span>
+                                <h4>Founder &amp; iOS Developer</h4>
+                                <p class="company"><a href="https://tinytwigstudio.com/" target="_blank" rel="noopener">Tiny Twig Studio</a>, UK</p>
+                            <ul>
+                                <li data-i18n="cv.job0.b1">Founded an independent studio for small, carefully built iPhone and iPad apps – no ads, no tracking</li>
+                                <li data-i18n="cv.job0.b2">Concept, design, development and App Store release of <strong>Sequently</strong>, a music memory game (released Nov 2026)</li>
+                                <li data-i18n="cv.job0.b3">Development of <strong>Pip Relight</strong>, a turn-based puzzle game with a browser-based level editor</li>
+                                <li data-i18n="cv.job0.b4">Accessibility by design: VoiceOver support, colour-blind friendly shapes, adjustable tempo</li>
+                                <li data-i18n="cv.job0.b5">Companion web tools (composer, level editor) and studio website</li>
+                            </ul>
+                            <h5 class="tools-heading">Tools and Frameworks</h5>
+                            <div class="skill-tags">
+                                <span class="tag">Swift</span> <span class="tag">Xcode</span> <span class="tag">App Store Connect</span> <span class="tag">git</span> <span class="tag">GitHub</span> <span class="tag">HTML/CSS/JS</span> <span class="tag">AI-Assisted Development</span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item current">
                             <div class="timeline-marker"></div>
                             <div class="timeline-content cv-item">
                                 <div class="timeline-date">Sep 2024 - Present</div>
