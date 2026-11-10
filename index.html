@@ -58,19 +58,19 @@
         <!-- Hero Section -->
         <section id="hero">
             <div class="easter-egg-42">42</div>
-            <div class="container">
+            <div class="container hero-grid">
                 <div class="hero-content">
-                    <div class="hero-profile">
-                        <img src="img/profile.jpg" alt="Alexander Wegner" class="profile-image">
-                    </div>
-                    <h2 data-i18n="hero.greeting">Hello, I'm <span class="highlight">Alex</span></h2>
-                    <p class="tagline" data-i18n="hero.tagline">iOS Developer @ Tiny Twig Studio • Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span></p>
+                    <h2 data-i18n="hero.greeting">Hello, I’m Alex.</h2>
                     <p class="intro" data-i18n="hero.intro">12 years of professional experience in automotive and med-tech software development with expertise in ASPICE, ADAS, test management and team leadership — and back to building iOS apps with my own studio. <strong>Sequently</strong> is out now on the App Store.</p>
+                    <p class="tagline" data-i18n="hero.tagline">iOS Developer @ Tiny Twig Studio / Software Engineer / Team Lead / Technical Project Lead / Test Manager / Enabler / AI &amp; Vibe Coding Enthusiast / Culture Builder / Team Motivation Driver / <span class="ninja-visible" title="Click me!">🥷</span></p>
                     <div class="cta-buttons">
                         <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View Projects</a>
                         <a href="#contact" class="btn btn-secondary" data-i18n="hero.getInTouch">Get in Touch</a>
-                        <a href="https://tinytwigstudio.com/" class="btn btn-secondary" target="_blank" rel="noopener">🌱 Tiny Twig Studio</a>
+                        <a href="https://tinytwigstudio.com/" class="btn btn-ghost" target="_blank" rel="noopener">🌱 Tiny Twig Studio</a>
                     </div>
+                </div>
+                <div class="hero-profile">
+                    <img src="img/profile.jpg" alt="Alexander Wegner" class="profile-image" width="539" height="539">
                 </div>
             </div>
         </section>
@@ -182,37 +182,37 @@
                 <h2 data-i18n="achievements.title">Key Achievements</h2>
                 <div class="achievements-grid">
                     <div class="achievement-card">
-                        <div class="achievement-icon">🏢</div>
+                        <div class="achievement-emoji" aria-hidden="true">🏢</div>
                         <h3 data-i18n="achievements.teamTitle">Built Team from Ground Up</h3>
                         <p data-i18n="achievements.team">Established new EDAG Berlin department and grew team from 0 to 30+ engineers across multiple international projects</p>
                     </div>
                     
                     <div class="achievement-card">
-                        <div class="achievement-icon">📈</div>
+                        <div class="achievement-emoji" aria-hidden="true">📈</div>
                         <h3 data-i18n="achievements.aspiceTitle">Process Excellence</h3>
                         <p data-i18n="achievements.aspice">Led project transformation from ASPICE Level 0 to Level 2, implementing quality processes and successfully passing external assessments</p>
                     </div>
                     
                     <div class="achievement-card">
-                        <div class="achievement-icon">🌍</div>
+                        <div class="achievement-emoji" aria-hidden="true">🌍</div>
                         <h3 data-i18n="achievements.internationalTitle">International Leadership</h3>
                         <p data-i18n="achievements.international">Managing cross-cultural teams across Germany, Hungary, Czech Republic, Malaysia and India in automotive software development</p>
                     </div>
                     
                     <div class="achievement-card">
-                        <div class="achievement-icon">🤖</div>
+                        <div class="achievement-emoji" aria-hidden="true">🤖</div>
                         <h3 data-i18n="achievements.innovationTitle">Innovation &amp; Automation</h3>
                         <p data-i18n="achievements.innovation">AI-assisted development and toolchain optimization, reducing manual effort and minimizing potential errors through custom automation solutions</p>
                     </div>
                     
                     <div class="achievement-card">
-                        <div class="achievement-icon">🚀</div>
+                        <div class="achievement-emoji" aria-hidden="true">🚀</div>
                         <h3 data-i18n="achievements.technologyTitle">Rapid Technology Adoption</h3>
                         <p data-i18n="achievements.technology">Mastered diverse tech stacks from embedded C to iOS Swift to AI-assisted development, consistently adapting to emerging technologies</p>
                     </div>
                     
                     <div class="achievement-card">
-                        <div class="achievement-icon">👨‍👩‍👧</div>
+                        <div class="achievement-emoji" aria-hidden="true">👨‍👩‍👧</div>
                         <h3 data-i18n="achievements.balanceTitle">Work-Life Balance Champion</h3>
                         <p data-i18n="achievements.balance">Applied engineering principles to parenthood with rapid prototyping, iterative improvement, and debugging, proving that professional excellence and family dedication aren't mutually exclusive</p>
                     </div>
@@ -463,193 +463,149 @@
         <section id="projects">
             <div class="container">
                 <h2 data-i18n="projects.title">Projects <span class="ninja-hidden" title="Click me!">🥷</span></h2>
-                <div class="projects-grid">
-                    <div class="project-card featured">
-                        <img src="https://tinytwigstudio.com/img/og-sequently.png" alt="Sequently – memory game for iPhone" class="project-image" loading="lazy">
-                        <span class="project-badge badge-live" data-i18n="projects.badgeLive">✅ Out now on the App Store</span>
-                        <h3>🎵 Sequently</h3>
+                <h3 class="project-group" data-i18n="projects.groupApps">Apps by Tiny Twig Studio</h3>
+                <div class="projects-grid grid-apps">
+                    <article class="project-card featured">
+                        <div class="project-cover"><img src="https://tinytwigstudio.com/img/og-sequently.png" alt="Sequently – memory game for iPhone" loading="lazy"></div>
+                        <span class="project-badge badge-live" data-i18n="projects.badgeLive">Out now on the App Store</span>
+                        <h4>Sequently</h4>
                         <p data-i18n="projects.sequently">A memory game for iPhone: listen to a sequence of tones on coloured dots and play it back — one tone longer every round. Includes a songbook of 40 public-domain tunes, generated melodies and a composer to write your own tunes and challenge friends via QR code or link. No ads, no subscription, no tracking.</p>
-                        <div class="project-tags">
-                            <span class="tag">iOS</span>
-                            <span class="tag">Swift</span>
-                            <span class="tag">Game Design</span>
-                            <span class="tag">Accessibility</span>
+                        <div class="project-tags"><span class="tag">iOS</span><span class="tag">Swift</span><span class="tag">Game Design</span><span class="tag">Accessibility</span></div>
+                        <div class="project-links">
+                            <a href="https://apps.apple.com/app/id6830149414" class="project-link" target="_blank" rel="noopener" data-i18n="projects.appStore">Download on the App Store</a>
+                            <a href="https://tinytwigstudio.com/sequently/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.website">Project Website</a>
+                            <a href="https://tinytwigstudio.com/sequently/compose/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.sequentlyComposer">Try the Web Composer</a>
                         </div>
-                        <a href="https://apps.apple.com/app/id6830149414" class="project-link" target="_blank" rel="noopener" data-i18n="projects.appStore">Download on the App Store →</a>
-                        <a href="https://tinytwigstudio.com/sequently/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.website">Project Website →</a>
-                        <a href="https://tinytwigstudio.com/sequently/compose/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.sequentlyComposer">Try the Web Composer →</a>
-                    </div>
-
-                    <div class="project-card featured">
-                        <img src="https://tinytwigstudio.com/img/og.png" alt="Pip Relight – turn-based puzzle game" class="project-image" loading="lazy">
-                        <span class="project-badge badge-dev" data-i18n="projects.badgeDev">🛠️ In development</span>
-                        <h3>🤖 Pip Relight</h3>
+                    </article>
+                    <article class="project-card featured">
+                        <div class="project-cover"><img src="https://tinytwigstudio.com/img/og.png" alt="Pip Relight – turn-based puzzle game" loading="lazy"></div>
+                        <span class="project-badge badge-dev" data-i18n="projects.badgeDev">In development</span>
+                        <h4>Pip Relight</h4>
                         <p data-i18n="projects.pip">A turn-based puzzle game about Pip, a small robot with a lamp, bringing the lights back to a dark space station. Slippery ice, laser beams and patrol bots across eight sectors — each with its own look, music and mechanics. Comes with a browser-based level editor to build and share levels.</p>
-                        <div class="project-tags">
-                            <span class="tag">iOS</span>
-                            <span class="tag">Swift</span>
-                            <span class="tag">Puzzle Game</span>
-                            <span class="tag">Level Editor</span>
+                        <div class="project-tags"><span class="tag">iOS</span><span class="tag">Swift</span><span class="tag">Puzzle Game</span><span class="tag">Level Editor</span></div>
+                        <div class="project-links">
+                            <a href="https://tinytwigstudio.com/pip/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.website">Project Website</a>
+                            <a href="https://tinytwigstudio.com/pip/editor/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.pipEditor">Open the Level Editor</a>
                         </div>
-                        <a href="https://tinytwigstudio.com/pip/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.website">Project Website →</a>
-                        <a href="https://tinytwigstudio.com/pip/editor/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.pipEditor">Open the Level Editor →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🎮 iOS Classics - Asteroid Blast & Sequently (2016)</h3>
-                        <p data-i18n="projects.games">My first two iOS games from my freelance period. <strong>Asteroid Blast</strong> is a classic space shooter with modern mechanics, 
-                        while the original <strong>Sequently</strong> was the first take on the music memory game that I have now rebuilt and released with Tiny Twig Studio.</p>
-                        <div class="project-tags">
-                            <span class="tag">Swift</span>
-                            <span class="tag">iOS</span>
-                            <span class="tag">Game Development</span>
-                            <span class="tag">SpriteKit</span>
-                        </div>
-                        <a href="https://youtu.be/uZ5V2YYIovw?si=tlBVoPWEWfO8_XOc" class="project-link" target="_blank">Watch Asteroid Blast Demo →</a>
-                        <a href="https://youtu.be/9WU1WQdwUnk?si=iX7TUB3_J2feylBW" class="project-link" target="_blank">Watch Sequently Demo (2016) →</a>
-                        <a href="https://github.com/Stish/iOS/tree/master/iOS_Game_003" class="project-link" target="_blank">Asteroid Blast Code →</a>
-                        <a href="https://github.com/Stish/iOS/tree/master/iOS_Game_004" class="project-link" target="_blank">Sequently Code →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🎓 Bachelor's Thesis - Battery Management System</h3>
-                        <p data-i18n="projects.thesis">Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. 
-                        Features include SOC monitoring, cell balancing, smart grid integration, and CAN bus communication with custom PCB design.</p>
-                        <div class="project-tags">
-                            <span class="tag">C</span>
-                            <span class="tag">Embedded Systems</span>
-                            <span class="tag">CAN Bus</span>
-                            <span class="tag">PCB Design</span>
-                        </div>
-                        <a href="https://github.com/Stish/uC/blob/master/Thesis/thesis_2012-10-16.pdf" class="project-link" target="_blank">Read Thesis (PDF) →</a>
-                        <a href="https://github.com/Stish/uC/tree/master/Thesis" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🔨 TinyWorkshop - Woodworking Projects</h3>
-                        <p data-i18n="projects.workshop">A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, 
-                        every project represents learning by doing. Explore my creations, techniques, and the evolution of my craft over the years.</p>
-                        <div class="project-tags">
-                            <span class="tag">Woodworking</span>
-                            <span class="tag">DIY</span>
-                            <span class="tag">Craftsmanship</span>
-                        </div>
-                        <a href="https://www.tinyworkshop.net/" class="project-link" target="_blank">Visit TinyWorkshop →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🧩 AUTOSAR Interface Designer</h3>
-                        <p data-i18n="projects.autosarDesigner">A web-based tooling concept for AUTOSAR interface modeling and structured definition workflows. Focused on improving consistency, reducing manual setup effort, and making interface authoring more transparent for engineering teams.</p>
-                        <div class="project-tags">
-                            <span class="tag">AUTOSAR</span>
-                            <span class="tag">Interface Design</span>
-                            <span class="tag">Web Tooling</span>
-                        </div>
-                        <a href="https://github.com/Stish/autosar_interface_designer" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>📐 UML Interface Diagram</h3>
-                        <p data-i18n="projects.interfaceDiagram">A diagram-focused utility for visualizing and documenting interfaces in a compact and understandable way. Helps teams communicate architecture decisions faster by turning complex interface relations into clear visual artifacts.</p>
-                        <div class="project-tags">
-                            <span class="tag">UML</span>
-                            <span class="tag">Diagrams</span>
-                            <span class="tag">Architecture</span>
-                            <span class="tag">Documentation</span>
-                        </div>
-                        <a href="https://github.com/Stish/interface_diagram" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🗂️ Snippet Board</h3>
-                        <p data-i18n="projects.snippetBoard">A lightweight Chrome Extension for collecting, organizing, and reusing frequently needed code blocks and text snippets. Designed for fast, in-browser access and improved daily productivity.</p>
-                        <div class="project-tags">
-                            <span class="tag">Chrome Extension</span>
-                            <span class="tag">Productivity</span>
-                            <span class="tag">Snippets</span>
-                            <span class="tag">Developer Tools</span>
-                        </div>
-                        <a href="https://chromewebstore.google.com/detail/snippet-board/jnbmkcfajdcmbkbacmndlcknbdamgomm" class="project-link" target="_blank">Open Chrome Extension →</a>
-                        <a href="https://github.com/Stish/snippet_board" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🎲 TurnKeeper</h3>
-                        <p data-i18n="projects.turnkeeper">My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative 
-                        in tabletop RPG games like D&D, Pathfinder, and similar systems. Features intuitive turn management and works offline.</p>
-                        <div class="project-tags">
-                            <span class="tag">PWA</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">AI-Assisted</span>
-                            <span class="tag">Mobile-First</span>
-                        </div>
-                        <a href="https://stish.github.io/turnkeeper/" class="project-link" target="_blank">Try TurnKeeper →</a>
-                        <a href="https://github.com/Stish/turnkeeper" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🤖 TurboRobo Education Kit</h3>
-                        <p data-i18n="projects.turborobo">Win32 GUI application for writing C programs for the Turbo Robo Education Kit. Features an intuitive drag-and-drop programming interface 
-                        similar to Scratch or Lego SPIKE, making embedded programming accessible for educational purposes.</p>
-                        <div class="project-tags">
-                            <span class="tag">Delphi</span>
-                            <span class="tag">Win32</span>
-                            <span class="tag">Education</span>
-                            <span class="tag">Embedded C</span>
-                        </div>
-                        <a href="https://youtu.be/eTNKklYEPZ4?si=yW2K_YtW08EDWBRk" class="project-link" target="_blank">Watch Demo Video →</a>
-                        <a href="https://stish.github.io/random/TurboRobo/Help/index.html" class="project-link" target="_blank">View Documentation →</a>
-                        <a href="https://github.com/Stish/random/tree/master/TurboRobo" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>💬 Microsoft Teams Chat Export</h3>
-                        <p data-i18n="projects.teams">A powerful Python utility that exports Microsoft Teams chats, group conversations, meetings, and channel messages into a single, 
-                        searchable HTML file. Features embedded images, intuitive navigation, and complete conversation history preservation.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">MS Teams API</span>
-                            <span class="tag">Data Export</span>
-                        </div>
-                        <a href="https://github.com/Stish/teams_chat_export/tree/develop" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>📧 Outlook Email Scraper</h3>
-                        <p data-i18n="projects.outlook">Python script that exports emails from Microsoft Outlook folders to HTML or MSG format files. 
-                        Uses COM automation to connect to your local Outlook installation and saves emails with organized, timestamped filenames for easy archival.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">COM Automation</span>
-                            <span class="tag">Email Export</span>
-                        </div>
-                        <a href="https://github.com/Stish/outlook_scraper/tree/develop" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>📋 MultiClipboard Manager</h3>
-                        <p data-i18n="projects.clipboard">Windows desktop application for managing multiple clipboard snippets simultaneously. 
-                        Enhances productivity by allowing quick access to previously copied text and managing a history of clipboard entries.</p>
-                        <div class="project-tags">
-                            <span class="tag">Delphi</span>
-                            <span class="tag">Windows</span>
-                            <span class="tag">Productivity</span>
-                        </div>
-                        <a href="https://github.com/Stish/random/tree/master/MultiClipboard" class="project-link" target="_blank">View Repository →</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🚀 More Projects & Code Samples</h3>
-                        <p data-i18n="projects.more">Explore my complete collection of open-source projects and utilities. Includes MATLAB/Simulink tools for automotive development, 
-                        Python automation scripts, VBA macros, batch utilities, and various experimental projects across multiple languages and frameworks.</p>
-                        <div class="project-tags">
-                            <span class="tag">MATLAB</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                        <a href="https://github.com/Stish?tab=repositories" class="project-link" target="_blank">Browse All Repositories →</a>
-                    </div>
+                    </article>
                 </div>
+                <h3 class="project-group" data-i18n="projects.groupTools">Engineering tools</h3>
+                <div class="projects-grid grid-tools">
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-tool" aria-hidden="true"><span>🧩</span></div>
+                        <h4>AUTOSAR Interface Designer</h4>
+                        <p data-i18n="projects.autosarDesigner">A web-based tooling concept for AUTOSAR interface modeling and structured definition workflows. Focused on improving consistency, reducing manual setup effort, and making interface authoring more transparent for engineering teams.</p>
+                        <div class="project-tags"><span class="tag">AUTOSAR</span><span class="tag">Interface Design</span><span class="tag">Web Tooling</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Stish/autosar_interface_designer" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-tool" aria-hidden="true"><span>📐</span></div>
+                        <h4>UML Interface Diagram</h4>
+                        <p data-i18n="projects.interfaceDiagram">A diagram-focused utility for visualizing and documenting interfaces in a compact and understandable way. Helps teams communicate architecture decisions faster by turning complex interface relations into clear visual artifacts.</p>
+                        <div class="project-tags"><span class="tag">UML</span><span class="tag">Diagrams</span><span class="tag">Architecture</span><span class="tag">Documentation</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Stish/interface_diagram" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-tool" aria-hidden="true"><span>🗂️</span></div>
+                        <h4>Snippet Board</h4>
+                        <p data-i18n="projects.snippetBoard">A lightweight Chrome Extension for collecting, organizing, and reusing frequently needed code blocks and text snippets. Designed for fast, in-browser access and improved daily productivity.</p>
+                        <div class="project-tags"><span class="tag">Chrome Extension</span><span class="tag">Productivity</span><span class="tag">Developer Tools</span></div>
+                        <div class="project-links">
+                            <a href="https://chromewebstore.google.com/detail/snippet-board/jnbmkcfajdcmbkbacmndlcknbdamgomm" class="project-link" target="_blank" rel="noopener" data-i18n="projects.chromeExt">Open Chrome Extension</a>
+                            <a href="https://github.com/Stish/snippet_board" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-tool" aria-hidden="true"><span>💬</span></div>
+                        <h4>Microsoft Teams Chat Export</h4>
+                        <p data-i18n="projects.teams">A powerful Python utility that exports Microsoft Teams chats, group conversations, meetings, and channel messages into a single, searchable HTML file. Features embedded images, intuitive navigation, and complete conversation history preservation.</p>
+                        <div class="project-tags"><span class="tag">Python</span><span class="tag">MS Teams API</span><span class="tag">Data Export</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Stish/teams_chat_export/tree/develop" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-tool" aria-hidden="true"><span>📧</span></div>
+                        <h4>Outlook Email Scraper</h4>
+                        <p data-i18n="projects.outlook">Python script that exports emails from Microsoft Outlook folders to HTML or MSG format files. Uses COM automation to connect to your local Outlook installation and saves emails with organized, timestamped filenames for easy archival.</p>
+                        <div class="project-tags"><span class="tag">Python</span><span class="tag">COM Automation</span><span class="tag">Email Export</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Stish/outlook_scraper/tree/develop" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-tool" aria-hidden="true"><span>📋</span></div>
+                        <h4>MultiClipboard Manager</h4>
+                        <p data-i18n="projects.clipboard">Windows desktop application for managing multiple clipboard snippets simultaneously. Enhances productivity by allowing quick access to previously copied text and managing a history of clipboard entries.</p>
+                        <div class="project-tags"><span class="tag">Delphi</span><span class="tag">Windows</span><span class="tag">Productivity</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Stish/random/tree/master/MultiClipboard" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                </div>
+                <h3 class="project-group" data-i18n="projects.groupHardware">Hardware &amp; education</h3>
+                <div class="projects-grid grid-hardware">
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-hw" aria-hidden="true"><span>🔋</span></div>
+                        <h4>Bachelor's Thesis – Battery Management System</h4>
+                        <p data-i18n="projects.thesis">Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. Features include SOC monitoring, cell balancing, smart grid integration, and CAN bus communication with custom PCB design.</p>
+                        <div class="project-tags"><span class="tag">C</span><span class="tag">Embedded Systems</span><span class="tag">CAN Bus</span><span class="tag">PCB Design</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Stish/uC/blob/master/Thesis/thesis_2012-10-16.pdf" class="project-link" target="_blank" rel="noopener" data-i18n="projects.readThesis">Read Thesis (PDF)</a>
+                            <a href="https://github.com/Stish/uC/tree/master/Thesis" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover"><img src="https://img.youtube.com/vi/eTNKklYEPZ4/hqdefault.jpg" alt="TurboRobo Education Kit demo video" loading="lazy"></div>
+                        <h4>TurboRobo Education Kit</h4>
+                        <p data-i18n="projects.turborobo">Win32 GUI application for writing C programs for the Turbo Robo Education Kit. Features an intuitive drag-and-drop programming interface similar to Scratch or Lego SPIKE, making embedded programming accessible for educational purposes.</p>
+                        <div class="project-tags"><span class="tag">Delphi</span><span class="tag">Win32</span><span class="tag">Education</span><span class="tag">Embedded C</span></div>
+                        <div class="project-links">
+                            <a href="https://youtu.be/eTNKklYEPZ4?si=yW2K_YtW08EDWBRk" class="project-link" target="_blank" rel="noopener" data-i18n="projects.demo">Watch Demo Video</a>
+                            <a href="https://stish.github.io/random/TurboRobo/Help/index.html" class="project-link" target="_blank" rel="noopener" data-i18n="projects.docs">View Documentation</a>
+                            <a href="https://github.com/Stish/random/tree/master/TurboRobo" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                </div>
+                <h3 class="project-group" data-i18n="projects.groupPersonal">Personal &amp; earlier projects</h3>
+                <div class="projects-grid grid-personal">
+                    <article class="project-card">
+                        <div class="project-cover"><img src="https://img.youtube.com/vi/uZ5V2YYIovw/hqdefault.jpg" alt="Asteroid Blast gameplay video" loading="lazy"></div>
+                        <h4>iOS Classics – Asteroid Blast &amp; Sequently (2016)</h4>
+                        <p data-i18n="projects.games">My first two iOS games from my freelance period. <strong>Asteroid Blast</strong> is a classic space shooter with modern mechanics, while the original <strong>Sequently</strong> was the first take on the music memory game that I have now rebuilt and released with Tiny Twig Studio.</p>
+                        <div class="project-tags"><span class="tag">Swift</span><span class="tag">iOS</span><span class="tag">Game Development</span><span class="tag">SpriteKit</span></div>
+                        <div class="project-links">
+                            <a href="https://youtu.be/uZ5V2YYIovw?si=tlBVoPWEWfO8_XOc" class="project-link" target="_blank" rel="noopener" data-i18n="projects.asteroidDemo">Watch Asteroid Blast Demo</a>
+                            <a href="https://youtu.be/9WU1WQdwUnk?si=iX7TUB3_J2feylBW" class="project-link" target="_blank" rel="noopener" data-i18n="projects.sequentlyDemo">Watch Sequently Demo (2016)</a>
+                            <a href="https://github.com/Stish/iOS/tree/master/iOS_Game_003" class="project-link" target="_blank" rel="noopener">Asteroid Blast Code</a>
+                            <a href="https://github.com/Stish/iOS/tree/master/iOS_Game_004" class="project-link" target="_blank" rel="noopener">Sequently Code</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-personal" aria-hidden="true"><span>🎲</span></div>
+                        <h4>TurnKeeper</h4>
+                        <p data-i18n="projects.turnkeeper">My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative in tabletop RPG games like D&D, Pathfinder, and similar systems. Features intuitive turn management and works offline.</p>
+                        <div class="project-tags"><span class="tag">PWA</span><span class="tag">JavaScript</span><span class="tag">AI-Assisted</span><span class="tag">Mobile-First</span></div>
+                        <div class="project-links">
+                            <a href="https://stish.github.io/turnkeeper/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.tryTurnkeeper">Try TurnKeeper</a>
+                            <a href="https://github.com/Stish/turnkeeper" class="project-link" target="_blank" rel="noopener" data-i18n="projects.repo">View Repository</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-cover cover-emoji cover-personal" aria-hidden="true"><span>🪚</span></div>
+                        <h4>TinyWorkshop – Woodworking</h4>
+                        <p data-i18n="projects.workshop">A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, every project represents learning by doing. Explore my creations, techniques, and the evolution of my craft over the years.</p>
+                        <div class="project-tags"><span class="tag">Woodworking</span><span class="tag">DIY</span><span class="tag">Craftsmanship</span></div>
+                        <div class="project-links">
+                            <a href="https://www.tinyworkshop.net/" class="project-link" target="_blank" rel="noopener" data-i18n="projects.visitWorkshop">Visit TinyWorkshop</a>
+                        </div>
+                    </article>
+                </div>
+                <p class="project-more"><span data-i18n="projects.moreShort">More MATLAB/Simulink tools, Python and VBA automation and experiments live on GitHub.</span> <a href="https://github.com/Stish?tab=repositories" target="_blank" rel="noopener" data-i18n="projects.browseAll">Browse All Repositories</a></p>
             </div>
         </section>
 
@@ -661,28 +617,34 @@
                     <p data-i18n="contact.intro">I'm always interested in hearing about new opportunities and collaborations — or your feedback on my apps.</p>
                     <div class="contact-links">
                         <a href="mailto:alexander.wegner@outlook.com" class="contact-item">
-                            <span class="icon">📧</span>
-                            <span>alexander.wegner@outlook.com</span>
+                            <span class="icon" aria-hidden="true">📧</span>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">alexander.wegner@outlook.com</span>
                         </a>
                         <a href="https://tinytwigstudio.com/" class="contact-item" target="_blank" rel="noopener">
-                            <span class="icon">🌱</span>
-                            <span>Tiny Twig Studio: tinytwigstudio.com</span>
+                            <span class="icon" aria-hidden="true">🌱</span>
+                            <span class="contact-label">Tiny Twig Studio</span>
+                            <span class="contact-value">tinytwigstudio.com</span>
                         </a>
                         <a href="https://apps.apple.com/app/id6830149414" class="contact-item" target="_blank" rel="noopener">
-                            <span class="icon">📱</span>
-                            <span data-i18n="contact.appStore">Sequently on the App Store</span>
+                            <span class="icon" aria-hidden="true">📱</span>
+                            <span class="contact-label">App Store</span>
+                            <span class="contact-value">Sequently</span>
                         </a>
-                        <a href="https://github.com/stish" class="contact-item" target="_blank">
-                            <span class="icon">💻</span>
-                            <span>GitHub: stish</span>
+                        <a href="https://linkedin.com/in/alexanderwegner" class="contact-item" target="_blank" rel="noopener">
+                            <span class="icon" aria-hidden="true">💼</span>
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">alexanderwegner</span>
                         </a>
-                        <a href="https://linkedin.com/in/alexanderwegner" class="contact-item" target="_blank">
-                            <span class="icon">💼</span>
-                            <span>LinkedIn: alexanderwegner</span>
+                        <a href="https://github.com/stish" class="contact-item" target="_blank" rel="noopener">
+                            <span class="icon" aria-hidden="true">💻</span>
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">stish</span>
                         </a>
-                        <a href="https://tinyworkshop.net" class="contact-item" target="_blank">
-                            <span class="icon">🌐</span>
-                            <span>TinyWorkshop: tinyworkshop.net</span>
+                        <a href="https://tinyworkshop.net" class="contact-item" target="_blank" rel="noopener">
+                            <span class="icon" aria-hidden="true">🪚</span>
+                            <span class="contact-label">TinyWorkshop</span>
+                            <span class="contact-value">tinyworkshop.net</span>
                         </a>
                     </div>
                 </div>
