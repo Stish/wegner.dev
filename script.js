@@ -8,8 +8,8 @@ const translations = {
         'nav.contact': 'Contact',
         'nav.menuOpen': 'Open menu',
         'nav.menuClose': 'Close menu',
-        'hero.greeting': "Hello, I'm <span class=\"highlight\">Alex</span>",
-        'hero.tagline': 'iOS Developer @ Tiny Twig Studio • Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
+        'hero.greeting': 'Hello, I’m Alex.',
+        'hero.tagline': 'iOS Developer @ Tiny Twig Studio / Software Engineer / Team Lead / Technical Project Lead / Test Manager / Enabler / AI &amp; Vibe Coding Enthusiast / Culture Builder / Team Motivation Driver / <span class="ninja-visible" title="Click me!">🥷</span>',
         'hero.intro': '12 years of professional experience in automotive and med-tech software development with expertise in ASPICE, ADAS, test management and team leadership — and back to building iOS apps with my own studio. <strong>Sequently</strong> is out now on the App Store.',
         'hero.viewProjects': 'View Projects',
         'hero.getInTouch': 'Get in Touch',
@@ -128,14 +128,29 @@ const translations = {
         'cv.edu2.desc': 'Apprenticeship covering Mechanics, Electrical Engineering, Software Development for Embedded Systems, Business Administration, Process and Team Management',
         'cv.edu2.grade': 'Grade: 1.16 (German grading system) | Conducted in English',
         'projects.title': 'Projects <span class="ninja-hidden" title="Click me!">🥷</span>',
-        'projects.badgeLive': '✅ Out now on the App Store',
-        'projects.badgeDev': '🛠️ In development',
-        'projects.appStore': 'Download on the App Store →',
-        'projects.website': 'Project Website →',
+        'projects.groupApps': 'Apps by Tiny Twig Studio',
+        'projects.groupTools': 'Engineering tools',
+        'projects.groupHardware': 'Hardware &amp; education',
+        'projects.groupPersonal': 'Personal &amp; earlier projects',
+        'projects.repo': 'View Repository',
+        'projects.chromeExt': 'Open Chrome Extension',
+        'projects.readThesis': 'Read Thesis (PDF)',
+        'projects.demo': 'Watch Demo Video',
+        'projects.docs': 'View Documentation',
+        'projects.asteroidDemo': 'Watch Asteroid Blast Demo',
+        'projects.sequentlyDemo': 'Watch Sequently Demo (2016)',
+        'projects.tryTurnkeeper': 'Try TurnKeeper',
+        'projects.visitWorkshop': 'Visit TinyWorkshop',
+        'projects.browseAll': 'Browse All Repositories',
+        'projects.moreShort': 'More MATLAB/Simulink tools, Python and VBA automation and experiments live on GitHub.',
+        'projects.badgeLive': 'Out now on the App Store',
+        'projects.badgeDev': 'In development',
+        'projects.appStore': 'Download on the App Store',
+        'projects.website': 'Project Website',
         'projects.sequently': 'A memory game for iPhone: listen to a sequence of tones on coloured dots and play it back — one tone longer every round. Includes a songbook of 40 public-domain tunes, generated melodies and a composer to write your own tunes and challenge friends via QR code or link. No ads, no subscription, no tracking.',
-        'projects.sequentlyComposer': 'Try the Web Composer →',
+        'projects.sequentlyComposer': 'Try the Web Composer',
         'projects.pip': 'A turn-based puzzle game about Pip, a small robot with a lamp, bringing the lights back to a dark space station. Slippery ice, laser beams and patrol bots across eight sectors — each with its own look, music and mechanics. Comes with a browser-based level editor to build and share levels.',
-        'projects.pipEditor': 'Open the Level Editor →',
+        'projects.pipEditor': 'Open the Level Editor',
         'projects.thesis': 'Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. Features include SOC monitoring, cell balancing, smart grid integration, and CAN bus communication with custom PCB design.',
         'projects.workshop': 'A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, every project represents learning by doing. Explore my creations, techniques, and the evolution of my craft over the years.',
         'projects.turnkeeper': 'My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative in tabletop RPG games like D&D, Pathfinder, and similar systems. Features intuitive turn management and works offline.',
@@ -160,8 +175,8 @@ const translations = {
         'nav.contact': 'Kontakt',
         'nav.menuOpen': 'Menü öffnen',
         'nav.menuClose': 'Menü schließen',
-        'hero.greeting': "Hallo, ich bin <span class=\"highlight\">Alex</span>",
-        'hero.tagline': 'iOS Developer @ Tiny Twig Studio • Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
+        'hero.greeting': 'Hallo, ich bin Alex.',
+        'hero.tagline': 'iOS Developer @ Tiny Twig Studio / Software Engineer / Team Lead / Technical Project Lead / Test Manager / Enabler / AI &amp; Vibe Coding Enthusiast / Culture Builder / Team Motivation Driver / <span class="ninja-visible" title="Click me!">🥷</span>',
         'hero.intro': '12 Jahre Berufserfahrung in der Software-Entwicklung für Automotive und Medizintechnik mit Expertise in ASPICE, ADAS, Testmanagement und Teamführung — und zurück bei iOS mit meinem eigenen Studio. <strong>Sequently</strong> ist jetzt im App Store erhältlich.',
         'hero.viewProjects': 'Projekte ansehen',
         'hero.getInTouch': 'Kontakt aufnehmen',
@@ -280,14 +295,29 @@ const translations = {
         'cv.edu2.desc': 'Ausbildung mit Schwerpunkten auf Mechanik, Elektrotechnik, Softwareentwicklung für Embedded Systems, Betriebswirtschaft, Prozess- und Teammanagement',
         'cv.edu2.grade': 'Note: 1,16 (deutsches Notensystem) | Ausbildung auf Englisch',
         'projects.title': 'Projekte <span class="ninja-hidden" title="Click me!">🥷</span>',
-        'projects.badgeLive': '✅ Jetzt im App Store',
-        'projects.badgeDev': '🛠️ In Entwicklung',
-        'projects.appStore': 'Im App Store laden →',
-        'projects.website': 'Zur Projektseite →',
+        'projects.groupApps': 'Apps von Tiny Twig Studio',
+        'projects.groupTools': 'Engineering-Tools',
+        'projects.groupHardware': 'Hardware &amp; Bildung',
+        'projects.groupPersonal': 'Persönliche &amp; frühere Projekte',
+        'projects.repo': 'Zum Repository',
+        'projects.chromeExt': 'Chrome-Extension öffnen',
+        'projects.readThesis': 'Thesis lesen (PDF)',
+        'projects.demo': 'Demo-Video ansehen',
+        'projects.docs': 'Dokumentation ansehen',
+        'projects.asteroidDemo': 'Asteroid-Blast-Demo ansehen',
+        'projects.sequentlyDemo': 'Sequently-Demo ansehen (2016)',
+        'projects.tryTurnkeeper': 'TurnKeeper ausprobieren',
+        'projects.visitWorkshop': 'TinyWorkshop besuchen',
+        'projects.browseAll': 'Alle Repositories ansehen',
+        'projects.moreShort': 'Weitere MATLAB/Simulink-Tools, Python- und VBA-Automatisierung und Experimente gibt es auf GitHub.',
+        'projects.badgeLive': 'Jetzt im App Store',
+        'projects.badgeDev': 'In Entwicklung',
+        'projects.appStore': 'Im App Store laden',
+        'projects.website': 'Zur Projektseite',
         'projects.sequently': 'Ein Gedächtnisspiel fürs iPhone: Eine Tonfolge auf farbigen Punkten anhören und nachspielen — jede Runde einen Ton länger. Mit einem Liederbuch aus 40 gemeinfreien Melodien, generierten Melodien und einem Composer, um eigene Melodien zu schreiben und Freunde per QR-Code oder Link herauszufordern. Keine Werbung, kein Abo, kein Tracking.',
-        'projects.sequentlyComposer': 'Web-Composer ausprobieren →',
+        'projects.sequentlyComposer': 'Web-Composer ausprobieren',
         'projects.pip': 'Ein rundenbasiertes Puzzlespiel über Pip, einen kleinen Roboter mit Lampe, der auf einer dunklen Raumstation das Licht zurückbringt. Rutschiges Eis, Laserstrahlen und Patrouillen-Roboter in acht Sektoren — jeder mit eigenem Look, eigener Musik und neuen Mechaniken. Mit browserbasiertem Level-Editor zum Bauen und Teilen eigener Level.',
-        'projects.pipEditor': 'Level-Editor öffnen →',
+        'projects.pipEditor': 'Level-Editor öffnen',
         'projects.thesis': 'Implementierung eines Batteriemanagementsystems in einem Niedrigenergie-Elektrofahrzeug mit umfassendem Energiemanagement. Funktionen umfassen SOC-Überwachung, Zellenbalancierung, Smart-Grid-Integration und CAN-Bus-Kommunikation mit maßgeschneidertem PCB-Design.',
         'projects.workshop': 'Eine Reise in die Holzbearbeitung, die mit kleinen Projekten begann und zu einer vollständigen Werkstatt heranwuchs. Von einfachen Handwerkzeugen bis hin zu fortschrittlichen Maschinen repräsentiert jedes Projekt Learning by Doing. Entdecken Sie meine Kreationen, Techniken und die Entwicklung meines Handwerks über die Jahre.',
         'projects.turnkeeper': 'Mein erstes vollständiges Projekt, komplett mit KI-unterstützter Entwicklung erstellt! Eine Mobile-First Progressive Web App (PWA) zur Verfolgung der Kampfinitiative in Pen-and-Paper-Rollenspielen wie D&D, Pathfinder und ähnlichen Systemen. Bietet intuitive Rundenverwaltung und funktioniert offline.',
@@ -393,32 +423,6 @@ window.addEventListener('scroll', () => {
         if (link.getAttribute('href').slice(1) === current) {
             link.classList.add('active');
         }
-    });
-});
-
-// Add scroll animation for elements
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe all project cards and CV items
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.project-card, .cv-item');
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        observer.observe(el);
     });
 });
 
