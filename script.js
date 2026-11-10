@@ -7,15 +7,16 @@ const translations = {
         'nav.projects': 'Projects',
         'nav.contact': 'Contact',
         'hero.greeting': "Hello, I'm <span class=\"highlight\">Alex</span>",
-        'hero.tagline': 'Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
-        'hero.intro': '12 years of professional experience in automotive software development with expertise in ASPICE, ADAS, test management and team leadership.',
+        'hero.tagline': 'iOS Developer @ Tiny Twig Studio • Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
+        'hero.intro': '12 years of professional experience in automotive and med-tech software development with expertise in ASPICE, ADAS, test management and team leadership — and back to building iOS apps with my own studio. <strong>Sequently</strong> is out now on the App Store.',
         'hero.viewProjects': 'View Projects',
         'hero.getInTouch': 'Get in Touch',
         'about.title': 'About Me',
         'about.para1': "I'm an experienced Software Engineer with over 12 years of professional experience, specializing in automotive series software development with a strong focus on ASPICE compliance, ADAS and Battery Management Systems. My expertise spans comprehensive test management, advanced toolchain optimization, technical project leadership, and cross-functional team coordination across multiple international locations.",
+        'about.paraIos': 'After my freelance iOS years, I\'m back on iOS: with <a href="https://tinytwigstudio.com/" target="_blank" rel="noopener">Tiny Twig Studio</a> I build small, carefully crafted iPhone and iPad apps — few features, done well, no ads and no tracking. The first release, <strong>Sequently</strong>, is out now on the App Store, and the puzzle game <strong>Pip Relight</strong> is in development.',
         'about.para2': "With 3 years of dedicated team leadership experience managing up to 30 engineers, I've successfully established and grown a new EDAG department and site in Berlin from the ground up.",
         'about.para3': "I'm passionate about integrating AI solutions and prompt engineering techniques into engineering workflows. I drive systematic process improvements that help teams become stronger, more efficient, and more motivated.",
-        'about.para4': "Currently based in the UK as an expat, I continue to push boundaries in automotive software excellence while mentoring engineers across different countries.",
+        'about.para4': "Currently based in the UK as an expat, I work on automotive and med-tech software projects while mentoring engineers across different countries.",
         'about.drivesMe': 'What Drives Me',
         'about.motto': '<em>Engineer at heart - always questioning assumptions and redefining constraints. Maybe the glass isn\'t half full or half empty; perhaps the glass is simply too big.</em>',
         'about.values': 'My Guiding Values',
@@ -112,6 +113,14 @@ const translations = {
         'cv.edu2.desc': 'Apprenticeship covering Mechanics, Electrical Engineering, Software Development for Embedded Systems, Business Administration, Process and Team Management',
         'cv.edu2.grade': 'Grade: 1.16 (German grading system) | Conducted in English',
         'projects.title': 'Projects <span class="ninja-hidden" title="Click me!">🥷</span>',
+        'projects.badgeLive': '✅ Out now on the App Store',
+        'projects.badgeDev': '🛠️ In development',
+        'projects.appStore': 'Download on the App Store →',
+        'projects.website': 'Project Website →',
+        'projects.sequently': 'A memory game for iPhone: listen to a sequence of tones on coloured dots and play it back — one tone longer every round. Includes a songbook of 40 public-domain tunes, generated melodies and a composer to write your own tunes and challenge friends via QR code or link. No ads, no subscription, no tracking.',
+        'projects.sequentlyComposer': 'Try the Web Composer →',
+        'projects.pip': 'A turn-based puzzle game about Pip, a small robot with a lamp, bringing the lights back to a dark space station. Slippery ice, laser beams and patrol bots across eight sectors — each with its own look, music and mechanics. Comes with a browser-based level editor to build and share levels.',
+        'projects.pipEditor': 'Open the Level Editor →',
         'projects.thesis': 'Implementation of a battery management system in a low-power electric vehicle with comprehensive energy management. Features include SOC monitoring, cell balancing, smart grid integration, and CAN bus communication with custom PCB design.',
         'projects.workshop': 'A journey into woodworking that started with small projects and grew into a full workshop. From basic hand tools to advanced machinery, every project represents learning by doing. Explore my creations, techniques, and the evolution of my craft over the years.',
         'projects.turnkeeper': 'My first complete project built entirely with AI-assisted development! A mobile-first Progressive Web App (PWA) for tracking combat initiative in tabletop RPG games like D&D, Pathfinder, and similar systems. Features intuitive turn management and works offline.',
@@ -119,13 +128,14 @@ const translations = {
         'projects.teams': 'A powerful Python utility that exports Microsoft Teams chats, group conversations, meetings, and channel messages into a single, searchable HTML file. Features embedded images, intuitive navigation, and complete conversation history preservation.',
         'projects.outlook': 'Python script that exports emails from Microsoft Outlook folders to HTML or MSG format files. Uses COM automation to connect to your local Outlook installation and saves emails with organized, timestamped filenames for easy archival.',
         'projects.clipboard': 'Windows desktop application for managing multiple clipboard snippets simultaneously. Enhances productivity by allowing quick access to previously copied text and managing a history of clipboard entries.',
-        'projects.games': 'Two iOS game projects developed during my freelance period. <strong>Asteroid Blast</strong> is a classic space shooter with modern mechanics, while <strong>Sequently</strong> is an innovative music-based puzzle game. Both showcase mobile game development skills with Swift and iOS frameworks.',
+        'projects.games': 'My first two iOS games from my freelance period. <strong>Asteroid Blast</strong> is a classic space shooter with modern mechanics, while the original <strong>Sequently</strong> was the first take on the music memory game that I have now rebuilt and released with Tiny Twig Studio.',
         'projects.autosarDesigner': 'A web-based tooling concept for AUTOSAR interface modeling and structured definition workflows. Focused on improving consistency, reducing manual setup effort, and making interface authoring more transparent for engineering teams.',
         'projects.interfaceDiagram': 'A diagram-focused utility for visualizing and documenting interfaces in a compact and understandable way. Helps teams communicate architecture decisions faster by turning complex interface relations into clear visual artifacts.',
         'projects.snippetBoard': 'A lightweight Chrome Extension for collecting, organizing, and reusing frequently needed code blocks and text snippets. Designed for fast, in-browser access and improved daily productivity.',
         'projects.more': 'Explore my complete collection of open-source projects and utilities. Includes MATLAB/Simulink tools for automotive development, Python automation scripts, VBA macros, batch utilities, and various experimental projects across multiple languages and frameworks.',
         'contact.title': 'Get in Touch <span class="ninja-hidden" title="Click me!">🥷</span>',
-        'contact.intro': "I'm always interested in hearing about new opportunities and collaborations."
+        'contact.intro': "I'm always interested in hearing about new opportunities and collaborations — or your feedback on my apps.",
+        'contact.appStore': 'Sequently on the App Store'
     },
     de: {
         'nav.about': 'Über mich',
@@ -134,15 +144,16 @@ const translations = {
         'nav.projects': 'Projekte',
         'nav.contact': 'Kontakt',
         'hero.greeting': "Hallo, ich bin <span class=\"highlight\">Alex</span>",
-        'hero.tagline': 'Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
-        'hero.intro': '12 Jahre Berufserfahrung in der Automobilsoftwareentwicklung mit Expertise in ASPICE, ADAS, Testmanagement und Teamführung.',
+        'hero.tagline': 'iOS Developer @ Tiny Twig Studio • Software Engineer • Team Lead • Technical Project Lead • Test Manager • Enabler • AI & Vibe Coding Enthusiast • Culture Builder • Team Motivation Driver • <span class="ninja-visible" title="Click me!">🥷</span>',
+        'hero.intro': '12 Jahre Berufserfahrung in der Software-Entwicklung für Automotive und Medizintechnik mit Expertise in ASPICE, ADAS, Testmanagement und Teamführung — und zurück bei iOS mit meinem eigenen Studio. <strong>Sequently</strong> ist jetzt im App Store erhältlich.',
         'hero.viewProjects': 'Projekte ansehen',
         'hero.getInTouch': 'Kontakt aufnehmen',
         'about.title': 'Über mich',
         'about.para1': 'Ich bin ein erfahrener Software Engineer mit über 12 Jahren Berufserfahrung, spezialisiert auf Automobilserien-Softwareentwicklung mit starkem Fokus auf ASPICE-Konformität, ADAS und Batteriemanagementsysteme. Meine Expertise umfasst umfassendes Testmanagement, fortschrittliche Toolchain-Optimierung, technische Projektleitung und funktionsübergreifende Teamkoordination an mehreren internationalen Standorten.',
+        'about.paraIos': 'Nach meinen Jahren als freiberuflicher iOS-Entwickler bin ich zurück bei iOS: Mit <a href="https://tinytwigstudio.com/" target="_blank" rel="noopener">Tiny Twig Studio</a> entwickle ich kleine, sorgfältig gebaute Apps für iPhone und iPad — wenige Features, dafür richtig gut, ohne Werbung und ohne Tracking. Die erste Veröffentlichung, <strong>Sequently</strong>, ist jetzt im App Store, das Puzzlespiel <strong>Pip Relight</strong> ist in Entwicklung.',
         'about.para2': 'Mit 3 Jahren engagierter Teamleitungserfahrung und der Leitung von bis zu 30 Ingenieuren habe ich erfolgreich eine neue EDAG-Abteilung und einen neuen Standort in Berlin von Grund auf aufgebaut.',
         'about.para3': 'Ich bin leidenschaftlich daran interessiert, KI-Lösungen und Prompt-Engineering-Techniken in Engineering-Workflows zu integrieren. Ich treibe systematische Prozessverbesserungen voran, die Teams stärker, effizienter und motivierter machen.',
-        'about.para4': 'Derzeit in Großbritannien als Expat ansässig, erweitere ich weiterhin die Grenzen der Automobilsoftware-Exzellenz und betreue Ingenieure in verschiedenen Ländern.',
+        'about.para4': 'Derzeit lebe ich als Expat in Großbritannien, arbeite an Software-Projekten in Automotive und Medizintechnik und betreue Ingenieure in verschiedenen Ländern.',
         'about.drivesMe': 'Was mich antreibt',
         'about.motto': '<em>Ingenieur durch und durch - Stets Annahmen hinterfragen und Beschränkungen neu definieren. Vielleicht ist das Glas weder halb voll noch halb leer; vielleicht ist das Glas einfach zu groß.</em>',
         'about.values': 'Meine Leitsätze',
@@ -239,6 +250,14 @@ const translations = {
         'cv.edu2.desc': 'Ausbildung mit Schwerpunkten auf Mechanik, Elektrotechnik, Softwareentwicklung für Embedded Systems, Betriebswirtschaft, Prozess- und Teammanagement',
         'cv.edu2.grade': 'Note: 1,16 (deutsches Notensystem) | Ausbildung auf Englisch',
         'projects.title': 'Projekte <span class="ninja-hidden" title="Click me!">🥷</span>',
+        'projects.badgeLive': '✅ Jetzt im App Store',
+        'projects.badgeDev': '🛠️ In Entwicklung',
+        'projects.appStore': 'Im App Store laden →',
+        'projects.website': 'Zur Projektseite →',
+        'projects.sequently': 'Ein Gedächtnisspiel fürs iPhone: Eine Tonfolge auf farbigen Punkten anhören und nachspielen — jede Runde einen Ton länger. Mit einem Liederbuch aus 40 gemeinfreien Melodien, generierten Melodien und einem Composer, um eigene Melodien zu schreiben und Freunde per QR-Code oder Link herauszufordern. Keine Werbung, kein Abo, kein Tracking.',
+        'projects.sequentlyComposer': 'Web-Composer ausprobieren →',
+        'projects.pip': 'Ein rundenbasiertes Puzzlespiel über Pip, einen kleinen Roboter mit Lampe, der auf einer dunklen Raumstation das Licht zurückbringt. Rutschiges Eis, Laserstrahlen und Patrouillen-Roboter in acht Sektoren — jeder mit eigenem Look, eigener Musik und neuen Mechaniken. Mit browserbasiertem Level-Editor zum Bauen und Teilen eigener Level.',
+        'projects.pipEditor': 'Level-Editor öffnen →',
         'projects.thesis': 'Implementierung eines Batteriemanagementsystems in einem Niedrigenergie-Elektrofahrzeug mit umfassendem Energiemanagement. Funktionen umfassen SOC-Überwachung, Zellenbalancierung, Smart-Grid-Integration und CAN-Bus-Kommunikation mit maßgeschneidertem PCB-Design.',
         'projects.workshop': 'Eine Reise in die Holzbearbeitung, die mit kleinen Projekten begann und zu einer vollständigen Werkstatt heranwuchs. Von einfachen Handwerkzeugen bis hin zu fortschrittlichen Maschinen repräsentiert jedes Projekt Learning by Doing. Entdecken Sie meine Kreationen, Techniken und die Entwicklung meines Handwerks über die Jahre.',
         'projects.turnkeeper': 'Mein erstes vollständiges Projekt, komplett mit KI-unterstützter Entwicklung erstellt! Eine Mobile-First Progressive Web App (PWA) zur Verfolgung der Kampfinitiative in Pen-and-Paper-Rollenspielen wie D&D, Pathfinder und ähnlichen Systemen. Bietet intuitive Rundenverwaltung und funktioniert offline.',
@@ -246,13 +265,14 @@ const translations = {
         'projects.teams': 'Ein leistungsstarkes Python-Tool, das Microsoft Teams Chats, Gruppengespräche, Meetings und Kanalnachrichten in eine einzige, durchsuchbare HTML-Datei exportiert. Bietet eingebettete Bilder, intuitive Navigation und vollständige Konversationshistorie.',
         'projects.outlook': 'Python-Skript zum Exportieren von E-Mails aus Microsoft Outlook-Ordnern in HTML- oder MSG-Dateien. Verwendet COM-Automatisierung zur Verbindung mit Ihrer lokalen Outlook-Installation und speichert E-Mails mit organisierten, zeitgestempelten Dateinamen für einfache Archivierung.',
         'projects.clipboard': 'Windows-Desktop-Anwendung zur gleichzeitigen Verwaltung mehrerer Zwischenablage-Snippets. Erhöht die Produktivität durch schnellen Zugriff auf zuvor kopierten Text und Verwaltung einer Historie von Zwischenablage-Einträgen.',
-        'projects.games': 'Zwei iOS-Spielprojekte, die während meiner freiberuflichen Tätigkeit entwickelt wurden. <strong>Asteroid Blast</strong> ist ein klassischer Space Shooter mit modernen Mechaniken, während <strong>Sequently</strong> ein innovatives musikbasiertes Puzzlespiel ist. Beide zeigen Fähigkeiten in der mobilen Spieleentwicklung mit Swift und iOS Frameworks.',
+        'projects.games': 'Meine ersten beiden iOS-Spiele aus meiner freiberuflichen Zeit. <strong>Asteroid Blast</strong> ist ein klassischer Space Shooter mit modernen Mechaniken, das ursprüngliche <strong>Sequently</strong> war die erste Version des musikalischen Gedächtnisspiels, das ich jetzt mit Tiny Twig Studio neu entwickelt und veröffentlicht habe.',
         'projects.autosarDesigner': 'Ein webbasiertes Tooling-Konzept für AUTOSAR-Interface-Modellierung und strukturierte Definitions-Workflows. Fokus auf besserer Konsistenz, weniger manuellem Aufwand und transparenterem Interface-Authoring für Engineering-Teams.',
         'projects.interfaceDiagram': 'Ein diagrammorientiertes Tool zur Visualisierung und Dokumentation von Interfaces in kompakter und verständlicher Form. Unterstützt Teams dabei, Architekturentscheidungen schneller zu vermitteln, indem komplexe Beziehungen klar dargestellt werden.',
         'projects.snippetBoard': 'Eine leichtgewichtige Chrome-Extension zum Sammeln, Organisieren und Wiederverwenden häufig benötigter Code- und Textbausteine. Entwickelt für schnellen Zugriff direkt im Browser und mehr Produktivität im Alltag.',
         'projects.more': 'Entdecken Sie meine vollständige Sammlung von Open-Source-Projekten und Tools. Beinhaltet MATLAB/Simulink-Tools für Automobilentwicklung, Python-Automatisierungsskripte, VBA-Makros, Batch-Utilities und verschiedene experimentelle Projekte in mehreren Sprachen und Frameworks.',
         'contact.title': 'Kontakt <span class="ninja-hidden" title="Click me!">🥷</span>',
-        'contact.intro': 'Ich bin immer an neuen Möglichkeiten und Kooperationen interessiert.'
+        'contact.intro': 'Ich freue mich immer über neue Möglichkeiten, Kooperationen — oder Feedback zu meinen Apps.',
+        'contact.appStore': 'Sequently im App Store'
     }
 };
 
@@ -870,7 +890,7 @@ if (resetBtn) {
             localStorage.removeItem('ninjasFound');
             
             // Reset ninja visuals
-            document.querySelectorAll('.ninja-hidden').forEach(ninja => {
+            document.querySelectorAll('.ninja-hidden, .ninja-visible').forEach(ninja => {
                 ninja.style.opacity = '';
                 ninja.style.transform = '';
             });

@@ -16,6 +16,8 @@
     --border-color: #e5e7eb;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --card-bg: #ffffff;
+    --text-secondary: var(--text-light);
 }
 
 [data-theme="dark"] {
@@ -29,6 +31,8 @@
     --border-color: #374151;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    --card-bg: #273449;
+    --text-secondary: var(--text-light);
 }
 
 html {
@@ -706,6 +710,48 @@ section h2 {
 
 .project-link:hover {
     color: var(--secondary-color);
+}
+
+/* Featured (iOS) project cards */
+.project-card.featured {
+    overflow: hidden;
+    border-color: var(--accent-color);
+}
+
+.project-image {
+    display: block;
+    width: calc(100% + 4rem);
+    margin: -2rem -2rem 1.25rem;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    background-color: var(--bg-secondary);
+}
+
+.project-badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 0.75rem;
+}
+
+.badge-live {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #059669;
+}
+
+.badge-dev {
+    background-color: rgba(251, 191, 36, 0.2);
+    color: #b45309;
+}
+
+[data-theme="dark"] .badge-live { color: #34d399; }
+[data-theme="dark"] .badge-dev { color: #fbbf24; }
+
+.about-text p a {
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 /* Contact Section */
